@@ -1,0 +1,4483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Embed Social
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://embedsocial.com/cdn/fonts/open-sans/stylesheet.css" />
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        template,
+        [hidden] {
+            display: none
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a:active,
+        a:hover {
+            outline-width: 0
+        }
+
+        abbr[title] {
+            border-bottom: 0;
+            text-decoration: underline;
+            text-decoration: underline dotted
+        }
+
+        b,
+        strong {
+            font-weight: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        mark {
+            background-color: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -0.25em
+        }
+
+        sup {
+            top: -0.5em
+        }
+
+        img {
+            border-style: none
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit
+        }
+
+        optgroup {
+            font-weight: bold
+        }
+
+        button,
+        input,
+        select {
+            overflow: visible
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            margin: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            cursor: pointer
+        }
+
+        [disabled] {
+            cursor: default
+        }
+
+        button,
+        html [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        button:-moz-focusring,
+        input:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        legend {
+            box-sizing: border-box;
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type="search"] {
+            -webkit-appearance: textfield
+        }
+
+        [type="search"]::-webkit-search-cancel-button,
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        @-ms-viewport {
+            width: device-width
+        }
+
+        .visible-xs,
+        .visible-sm,
+        .visible-md,
+        .visible-lg {
+            display: none !important
+        }
+
+        .visible-xs-block,
+        .visible-xs-inline,
+        .visible-xs-inline-block,
+        .visible-sm-block,
+        .visible-sm-inline,
+        .visible-sm-inline-block,
+        .visible-md-block,
+        .visible-md-inline,
+        .visible-md-inline-block,
+        .visible-lg-block,
+        .visible-lg-inline,
+        .visible-lg-inline-block {
+            display: none !important
+        }
+
+        @media(max-width:767px) {
+            .visible-xs {
+                display: block !important
+            }
+            table.visible-xs {
+                display: table
+            }
+            tr.visible-xs {
+                display: table-row !important
+            }
+            th.visible-xs,
+            td.visible-xs {
+                display: table-cell !important
+            }
+        }
+
+        @media(max-width:767px) {
+            .visible-xs-block {
+                display: block !important
+            }
+        }
+
+        @media(max-width:767px) {
+            .visible-xs-inline {
+                display: inline !important
+            }
+        }
+
+        @media(max-width:767px) {
+            .visible-xs-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            .visible-sm {
+                display: block !important
+            }
+            table.visible-sm {
+                display: table
+            }
+            tr.visible-sm {
+                display: table-row !important
+            }
+            th.visible-sm,
+            td.visible-sm {
+                display: table-cell !important
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            .visible-sm-block {
+                display: block !important
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            .visible-sm-inline {
+                display: inline !important
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            .visible-sm-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1199px) {
+            .visible-md {
+                display: block !important
+            }
+            table.visible-md {
+                display: table
+            }
+            tr.visible-md {
+                display: table-row !important
+            }
+            th.visible-md,
+            td.visible-md {
+                display: table-cell !important
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1199px) {
+            .visible-md-block {
+                display: block !important
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1199px) {
+            .visible-md-inline {
+                display: inline !important
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1199px) {
+            .visible-md-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media(min-width:1200px) {
+            .visible-lg {
+                display: block !important
+            }
+            table.visible-lg {
+                display: table
+            }
+            tr.visible-lg {
+                display: table-row !important
+            }
+            th.visible-lg,
+            td.visible-lg {
+                display: table-cell !important
+            }
+        }
+
+        @media(min-width:1200px) {
+            .visible-lg-block {
+                display: block !important
+            }
+        }
+
+        @media(min-width:1200px) {
+            .visible-lg-inline {
+                display: inline !important
+            }
+        }
+
+        @media(min-width:1200px) {
+            .visible-lg-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media(max-width:767px) {
+            .hidden-xs {
+                display: none !important
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            .hidden-sm {
+                display: none !important
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1199px) {
+            .hidden-md {
+                display: none !important
+            }
+        }
+
+        @media(min-width:1200px) {
+            .hidden-lg {
+                display: none !important
+            }
+        }
+
+        .visible-print {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print {
+                display: block !important
+            }
+            table.visible-print {
+                display: table
+            }
+            tr.visible-print {
+                display: table-row !important
+            }
+            th.visible-print,
+            td.visible-print {
+                display: table-cell !important
+            }
+        }
+
+        .visible-print-block {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-block {
+                display: block !important
+            }
+        }
+
+        .visible-print-inline {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-inline {
+                display: inline !important
+            }
+        }
+
+        .visible-print-inline-block {
+            display: none !important
+        }
+
+        @media print {
+            .visible-print-inline-block {
+                display: inline-block !important
+            }
+        }
+
+        @media print {
+            .hidden-print {
+                display: none !important
+            }
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 7.5px;
+            padding-right: 7.5px
+        }
+
+        @media(min-width:768px) {
+            .container {
+                width: 735px
+            }
+        }
+
+        @media(min-width:992px) {
+            .container {
+                width: 955px
+            }
+        }
+
+        @media(min-width:1200px) {
+            .container {
+                width: 1155px
+            }
+        }
+
+        .container-fluid {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 7.5px;
+            padding-right: 7.5px
+        }
+
+        .row {
+            margin-left: -7.5px;
+            margin-right: -7.5px
+        }
+
+        .col,
+        .col-xs-1,
+        .col-sm-1,
+        .col-md-1,
+        .col-lg-1,
+        .col-xs-2,
+        .col-sm-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-sm-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-sm-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-sm-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-sm-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-sm-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-sm-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-sm-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-sm-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-sm-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-sm-12,
+        .col-md-12,
+        .col-lg-12,
+        .col-xs-13,
+        .col-sm-13,
+        .col-md-13,
+        .col-lg-13,
+        .col-xs-14,
+        .col-sm-14,
+        .col-md-14,
+        .col-lg-14,
+        .col-xs-15,
+        .col-sm-15,
+        .col-md-15,
+        .col-lg-15,
+        .col-xs-16,
+        .col-sm-16,
+        .col-md-16,
+        .col-lg-16,
+        .col-xs-17,
+        .col-sm-17,
+        .col-md-17,
+        .col-lg-17,
+        .col-xs-18,
+        .col-sm-18,
+        .col-md-18,
+        .col-lg-18,
+        .col-xs-19,
+        .col-sm-19,
+        .col-md-19,
+        .col-lg-19,
+        .col-xs-20,
+        .col-sm-20,
+        .col-md-20,
+        .col-lg-20,
+        .col-xs-21,
+        .col-sm-21,
+        .col-md-21,
+        .col-lg-21,
+        .col-xs-22,
+        .col-sm-22,
+        .col-md-22,
+        .col-lg-22,
+        .col-xs-23,
+        .col-sm-23,
+        .col-md-23,
+        .col-lg-23,
+        .col-xs-24,
+        .col-sm-24,
+        .col-md-24,
+        .col-lg-24,
+        .col-xxs-1,
+        .col-xxs-2,
+        .col-xxs-3,
+        .col-xxs-4,
+        .col-xxs-5,
+        .col-xxs-6,
+        .col-xxs-7,
+        .col-xxs-8,
+        .col-xxs-9,
+        .col-xxs-10,
+        .col-xxs-11,
+        .col-xxs-12 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 7.5px;
+            padding-right: 7.5px
+        }
+
+        .col,
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-xs-13,
+        .col-xs-14,
+        .col-xs-15,
+        .col-xs-16,
+        .col-xs-17,
+        .col-xs-18,
+        .col-xs-19,
+        .col-xs-20,
+        .col-xs-21,
+        .col-xs-22,
+        .col-xs-23,
+        .col-xs-24 {
+            float: left
+        }
+
+        .col-xs-24 {
+            width: 100%
+        }
+
+        .col-xs-23 {
+            width: 95.83333333%
+        }
+
+        .col-xs-22 {
+            width: 91.66666667%
+        }
+
+        .col-xs-21 {
+            width: 87.5%
+        }
+
+        .col-xs-20 {
+            width: 83.33333333%
+        }
+
+        .col-xs-19 {
+            width: 79.16666667%
+        }
+
+        .col-xs-18 {
+            width: 75%
+        }
+
+        .col-xs-17 {
+            width: 70.83333333%
+        }
+
+        .col-xs-16 {
+            width: 66.66666667%
+        }
+
+        .col-xs-15 {
+            width: 62.5%
+        }
+
+        .col-xs-14 {
+            width: 58.33333333%
+        }
+
+        .col-xs-13 {
+            width: 54.16666667%
+        }
+
+        .col-xs-12 {
+            width: 50%
+        }
+
+        .col-xs-11 {
+            width: 45.83333333%
+        }
+
+        .col-xs-10 {
+            width: 41.66666667%
+        }
+
+        .col-xs-9 {
+            width: 37.5%
+        }
+
+        .col-xs-8 {
+            width: 33.33333333%
+        }
+
+        .col-xs-7 {
+            width: 29.16666667%
+        }
+
+        .col-xs-6 {
+            width: 25%
+        }
+
+        .col-xs-5 {
+            width: 20.83333333%
+        }
+
+        .col-xs-4 {
+            width: 16.66666667%
+        }
+
+        .col-xs-3 {
+            width: 12.5%
+        }
+
+        .col-xs-2 {
+            width: 8.33333333%
+        }
+
+        .col-xs-1 {
+            width: 4.16666667%
+        }
+
+        .col-xs-pull-24 {
+            right: 100%
+        }
+
+        .col-xs-pull-23 {
+            right: 95.83333333%
+        }
+
+        .col-xs-pull-22 {
+            right: 91.66666667%
+        }
+
+        .col-xs-pull-21 {
+            right: 87.5%
+        }
+
+        .col-xs-pull-20 {
+            right: 83.33333333%
+        }
+
+        .col-xs-pull-19 {
+            right: 79.16666667%
+        }
+
+        .col-xs-pull-18 {
+            right: 75%
+        }
+
+        .col-xs-pull-17 {
+            right: 70.83333333%
+        }
+
+        .col-xs-pull-16 {
+            right: 66.66666667%
+        }
+
+        .col-xs-pull-15 {
+            right: 62.5%
+        }
+
+        .col-xs-pull-14 {
+            right: 58.33333333%
+        }
+
+        .col-xs-pull-13 {
+            right: 54.16666667%
+        }
+
+        .col-xs-pull-12 {
+            right: 50%
+        }
+
+        .col-xs-pull-11 {
+            right: 45.83333333%
+        }
+
+        .col-xs-pull-10 {
+            right: 41.66666667%
+        }
+
+        .col-xs-pull-9 {
+            right: 37.5%
+        }
+
+        .col-xs-pull-8 {
+            right: 33.33333333%
+        }
+
+        .col-xs-pull-7 {
+            right: 29.16666667%
+        }
+
+        .col-xs-pull-6 {
+            right: 25%
+        }
+
+        .col-xs-pull-5 {
+            right: 20.83333333%
+        }
+
+        .col-xs-pull-4 {
+            right: 16.66666667%
+        }
+
+        .col-xs-pull-3 {
+            right: 12.5%
+        }
+
+        .col-xs-pull-2 {
+            right: 8.33333333%
+        }
+
+        .col-xs-pull-1 {
+            right: 4.16666667%
+        }
+
+        .col-xs-pull-0 {
+            right: auto
+        }
+
+        .col-xs-push-24 {
+            left: 100%
+        }
+
+        .col-xs-push-23 {
+            left: 95.83333333%
+        }
+
+        .col-xs-push-22 {
+            left: 91.66666667%
+        }
+
+        .col-xs-push-21 {
+            left: 87.5%
+        }
+
+        .col-xs-push-20 {
+            left: 83.33333333%
+        }
+
+        .col-xs-push-19 {
+            left: 79.16666667%
+        }
+
+        .col-xs-push-18 {
+            left: 75%
+        }
+
+        .col-xs-push-17 {
+            left: 70.83333333%
+        }
+
+        .col-xs-push-16 {
+            left: 66.66666667%
+        }
+
+        .col-xs-push-15 {
+            left: 62.5%
+        }
+
+        .col-xs-push-14 {
+            left: 58.33333333%
+        }
+
+        .col-xs-push-13 {
+            left: 54.16666667%
+        }
+
+        .col-xs-push-12 {
+            left: 50%
+        }
+
+        .col-xs-push-11 {
+            left: 45.83333333%
+        }
+
+        .col-xs-push-10 {
+            left: 41.66666667%
+        }
+
+        .col-xs-push-9 {
+            left: 37.5%
+        }
+
+        .col-xs-push-8 {
+            left: 33.33333333%
+        }
+
+        .col-xs-push-7 {
+            left: 29.16666667%
+        }
+
+        .col-xs-push-6 {
+            left: 25%
+        }
+
+        .col-xs-push-5 {
+            left: 20.83333333%
+        }
+
+        .col-xs-push-4 {
+            left: 16.66666667%
+        }
+
+        .col-xs-push-3 {
+            left: 12.5%
+        }
+
+        .col-xs-push-2 {
+            left: 8.33333333%
+        }
+
+        .col-xs-push-1 {
+            left: 4.16666667%
+        }
+
+        .col-xs-push-0 {
+            left: auto
+        }
+
+        .col-xs-offset-24 {
+            margin-left: 100%
+        }
+
+        .col-xs-offset-23 {
+            margin-left: 95.83333333%
+        }
+
+        .col-xs-offset-22 {
+            margin-left: 91.66666667%
+        }
+
+        .col-xs-offset-21 {
+            margin-left: 87.5%
+        }
+
+        .col-xs-offset-20 {
+            margin-left: 83.33333333%
+        }
+
+        .col-xs-offset-19 {
+            margin-left: 79.16666667%
+        }
+
+        .col-xs-offset-18 {
+            margin-left: 75%
+        }
+
+        .col-xs-offset-17 {
+            margin-left: 70.83333333%
+        }
+
+        .col-xs-offset-16 {
+            margin-left: 66.66666667%
+        }
+
+        .col-xs-offset-15 {
+            margin-left: 62.5%
+        }
+
+        .col-xs-offset-14 {
+            margin-left: 58.33333333%
+        }
+
+        .col-xs-offset-13 {
+            margin-left: 54.16666667%
+        }
+
+        .col-xs-offset-12 {
+            margin-left: 50%
+        }
+
+        .col-xs-offset-11 {
+            margin-left: 45.83333333%
+        }
+
+        .col-xs-offset-10 {
+            margin-left: 41.66666667%
+        }
+
+        .col-xs-offset-9 {
+            margin-left: 37.5%
+        }
+
+        .col-xs-offset-8 {
+            margin-left: 33.33333333%
+        }
+
+        .col-xs-offset-7 {
+            margin-left: 29.16666667%
+        }
+
+        .col-xs-offset-6 {
+            margin-left: 25%
+        }
+
+        .col-xs-offset-5 {
+            margin-left: 20.83333333%
+        }
+
+        .col-xs-offset-4 {
+            margin-left: 16.66666667%
+        }
+
+        .col-xs-offset-3 {
+            margin-left: 12.5%
+        }
+
+        .col-xs-offset-2 {
+            margin-left: 8.33333333%
+        }
+
+        .col-xs-offset-1 {
+            margin-left: 4.16666667%
+        }
+
+        .col-xs-offset-0 {
+            margin-left: 0
+        }
+
+        @media(min-width:768px) {
+            .col,
+            .col-sm-1,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12,
+            .col-sm-13,
+            .col-sm-14,
+            .col-sm-15,
+            .col-sm-16,
+            .col-sm-17,
+            .col-sm-18,
+            .col-sm-19,
+            .col-sm-20,
+            .col-sm-21,
+            .col-sm-22,
+            .col-sm-23,
+            .col-sm-24 {
+                float: left
+            }
+            .col-sm-24 {
+                width: 100%
+            }
+            .col-sm-23 {
+                width: 95.83333333%
+            }
+            .col-sm-22 {
+                width: 91.66666667%
+            }
+            .col-sm-21 {
+                width: 87.5%
+            }
+            .col-sm-20 {
+                width: 83.33333333%
+            }
+            .col-sm-19 {
+                width: 79.16666667%
+            }
+            .col-sm-18 {
+                width: 75%
+            }
+            .col-sm-17 {
+                width: 70.83333333%
+            }
+            .col-sm-16 {
+                width: 66.66666667%
+            }
+            .col-sm-15 {
+                width: 62.5%
+            }
+            .col-sm-14 {
+                width: 58.33333333%
+            }
+            .col-sm-13 {
+                width: 54.16666667%
+            }
+            .col-sm-12 {
+                width: 50%
+            }
+            .col-sm-11 {
+                width: 45.83333333%
+            }
+            .col-sm-10 {
+                width: 41.66666667%
+            }
+            .col-sm-9 {
+                width: 37.5%
+            }
+            .col-sm-8 {
+                width: 33.33333333%
+            }
+            .col-sm-7 {
+                width: 29.16666667%
+            }
+            .col-sm-6 {
+                width: 25%
+            }
+            .col-sm-5 {
+                width: 20.83333333%
+            }
+            .col-sm-4 {
+                width: 16.66666667%
+            }
+            .col-sm-3 {
+                width: 12.5%
+            }
+            .col-sm-2 {
+                width: 8.33333333%
+            }
+            .col-sm-1 {
+                width: 4.16666667%
+            }
+            .col-sm-pull-24 {
+                right: 100%
+            }
+            .col-sm-pull-23 {
+                right: 95.83333333%
+            }
+            .col-sm-pull-22 {
+                right: 91.66666667%
+            }
+            .col-sm-pull-21 {
+                right: 87.5%
+            }
+            .col-sm-pull-20 {
+                right: 83.33333333%
+            }
+            .col-sm-pull-19 {
+                right: 79.16666667%
+            }
+            .col-sm-pull-18 {
+                right: 75%
+            }
+            .col-sm-pull-17 {
+                right: 70.83333333%
+            }
+            .col-sm-pull-16 {
+                right: 66.66666667%
+            }
+            .col-sm-pull-15 {
+                right: 62.5%
+            }
+            .col-sm-pull-14 {
+                right: 58.33333333%
+            }
+            .col-sm-pull-13 {
+                right: 54.16666667%
+            }
+            .col-sm-pull-12 {
+                right: 50%
+            }
+            .col-sm-pull-11 {
+                right: 45.83333333%
+            }
+            .col-sm-pull-10 {
+                right: 41.66666667%
+            }
+            .col-sm-pull-9 {
+                right: 37.5%
+            }
+            .col-sm-pull-8 {
+                right: 33.33333333%
+            }
+            .col-sm-pull-7 {
+                right: 29.16666667%
+            }
+            .col-sm-pull-6 {
+                right: 25%
+            }
+            .col-sm-pull-5 {
+                right: 20.83333333%
+            }
+            .col-sm-pull-4 {
+                right: 16.66666667%
+            }
+            .col-sm-pull-3 {
+                right: 12.5%
+            }
+            .col-sm-pull-2 {
+                right: 8.33333333%
+            }
+            .col-sm-pull-1 {
+                right: 4.16666667%
+            }
+            .col-sm-pull-0 {
+                right: auto
+            }
+            .col-sm-push-24 {
+                left: 100%
+            }
+            .col-sm-push-23 {
+                left: 95.83333333%
+            }
+            .col-sm-push-22 {
+                left: 91.66666667%
+            }
+            .col-sm-push-21 {
+                left: 87.5%
+            }
+            .col-sm-push-20 {
+                left: 83.33333333%
+            }
+            .col-sm-push-19 {
+                left: 79.16666667%
+            }
+            .col-sm-push-18 {
+                left: 75%
+            }
+            .col-sm-push-17 {
+                left: 70.83333333%
+            }
+            .col-sm-push-16 {
+                left: 66.66666667%
+            }
+            .col-sm-push-15 {
+                left: 62.5%
+            }
+            .col-sm-push-14 {
+                left: 58.33333333%
+            }
+            .col-sm-push-13 {
+                left: 54.16666667%
+            }
+            .col-sm-push-12 {
+                left: 50%
+            }
+            .col-sm-push-11 {
+                left: 45.83333333%
+            }
+            .col-sm-push-10 {
+                left: 41.66666667%
+            }
+            .col-sm-push-9 {
+                left: 37.5%
+            }
+            .col-sm-push-8 {
+                left: 33.33333333%
+            }
+            .col-sm-push-7 {
+                left: 29.16666667%
+            }
+            .col-sm-push-6 {
+                left: 25%
+            }
+            .col-sm-push-5 {
+                left: 20.83333333%
+            }
+            .col-sm-push-4 {
+                left: 16.66666667%
+            }
+            .col-sm-push-3 {
+                left: 12.5%
+            }
+            .col-sm-push-2 {
+                left: 8.33333333%
+            }
+            .col-sm-push-1 {
+                left: 4.16666667%
+            }
+            .col-sm-push-0 {
+                left: auto
+            }
+            .col-sm-offset-24 {
+                margin-left: 100%
+            }
+            .col-sm-offset-23 {
+                margin-left: 95.83333333%
+            }
+            .col-sm-offset-22 {
+                margin-left: 91.66666667%
+            }
+            .col-sm-offset-21 {
+                margin-left: 87.5%
+            }
+            .col-sm-offset-20 {
+                margin-left: 83.33333333%
+            }
+            .col-sm-offset-19 {
+                margin-left: 79.16666667%
+            }
+            .col-sm-offset-18 {
+                margin-left: 75%
+            }
+            .col-sm-offset-17 {
+                margin-left: 70.83333333%
+            }
+            .col-sm-offset-16 {
+                margin-left: 66.66666667%
+            }
+            .col-sm-offset-15 {
+                margin-left: 62.5%
+            }
+            .col-sm-offset-14 {
+                margin-left: 58.33333333%
+            }
+            .col-sm-offset-13 {
+                margin-left: 54.16666667%
+            }
+            .col-sm-offset-12 {
+                margin-left: 50%
+            }
+            .col-sm-offset-11 {
+                margin-left: 45.83333333%
+            }
+            .col-sm-offset-10 {
+                margin-left: 41.66666667%
+            }
+            .col-sm-offset-9 {
+                margin-left: 37.5%
+            }
+            .col-sm-offset-8 {
+                margin-left: 33.33333333%
+            }
+            .col-sm-offset-7 {
+                margin-left: 29.16666667%
+            }
+            .col-sm-offset-6 {
+                margin-left: 25%
+            }
+            .col-sm-offset-5 {
+                margin-left: 20.83333333%
+            }
+            .col-sm-offset-4 {
+                margin-left: 16.66666667%
+            }
+            .col-sm-offset-3 {
+                margin-left: 12.5%
+            }
+            .col-sm-offset-2 {
+                margin-left: 8.33333333%
+            }
+            .col-sm-offset-1 {
+                margin-left: 4.16666667%
+            }
+            .col-sm-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        @media(min-width:992px) {
+            .col,
+            .col-md-1,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12,
+            .col-md-13,
+            .col-md-14,
+            .col-md-15,
+            .col-md-16,
+            .col-md-17,
+            .col-md-18,
+            .col-md-19,
+            .col-md-20,
+            .col-md-21,
+            .col-md-22,
+            .col-md-23,
+            .col-md-24 {
+                float: left
+            }
+            .col-md-24 {
+                width: 100%
+            }
+            .col-md-23 {
+                width: 95.83333333%
+            }
+            .col-md-22 {
+                width: 91.66666667%
+            }
+            .col-md-21 {
+                width: 87.5%
+            }
+            .col-md-20 {
+                width: 83.33333333%
+            }
+            .col-md-19 {
+                width: 79.16666667%
+            }
+            .col-md-18 {
+                width: 75%
+            }
+            .col-md-17 {
+                width: 70.83333333%
+            }
+            .col-md-16 {
+                width: 66.66666667%
+            }
+            .col-md-15 {
+                width: 62.5%
+            }
+            .col-md-14 {
+                width: 58.33333333%
+            }
+            .col-md-13 {
+                width: 54.16666667%
+            }
+            .col-md-12 {
+                width: 50%
+            }
+            .col-md-11 {
+                width: 45.83333333%
+            }
+            .col-md-10 {
+                width: 41.66666667%
+            }
+            .col-md-9 {
+                width: 37.5%
+            }
+            .col-md-8 {
+                width: 33.33333333%
+            }
+            .col-md-7 {
+                width: 29.16666667%
+            }
+            .col-md-6 {
+                width: 25%
+            }
+            .col-md-5 {
+                width: 20.83333333%
+            }
+            .col-md-4 {
+                width: 16.66666667%
+            }
+            .col-md-3 {
+                width: 12.5%
+            }
+            .col-md-2 {
+                width: 8.33333333%
+            }
+            .col-md-1 {
+                width: 4.16666667%
+            }
+            .col-md-pull-24 {
+                right: 100%
+            }
+            .col-md-pull-23 {
+                right: 95.83333333%
+            }
+            .col-md-pull-22 {
+                right: 91.66666667%
+            }
+            .col-md-pull-21 {
+                right: 87.5%
+            }
+            .col-md-pull-20 {
+                right: 83.33333333%
+            }
+            .col-md-pull-19 {
+                right: 79.16666667%
+            }
+            .col-md-pull-18 {
+                right: 75%
+            }
+            .col-md-pull-17 {
+                right: 70.83333333%
+            }
+            .col-md-pull-16 {
+                right: 66.66666667%
+            }
+            .col-md-pull-15 {
+                right: 62.5%
+            }
+            .col-md-pull-14 {
+                right: 58.33333333%
+            }
+            .col-md-pull-13 {
+                right: 54.16666667%
+            }
+            .col-md-pull-12 {
+                right: 50%
+            }
+            .col-md-pull-11 {
+                right: 45.83333333%
+            }
+            .col-md-pull-10 {
+                right: 41.66666667%
+            }
+            .col-md-pull-9 {
+                right: 37.5%
+            }
+            .col-md-pull-8 {
+                right: 33.33333333%
+            }
+            .col-md-pull-7 {
+                right: 29.16666667%
+            }
+            .col-md-pull-6 {
+                right: 25%
+            }
+            .col-md-pull-5 {
+                right: 20.83333333%
+            }
+            .col-md-pull-4 {
+                right: 16.66666667%
+            }
+            .col-md-pull-3 {
+                right: 12.5%
+            }
+            .col-md-pull-2 {
+                right: 8.33333333%
+            }
+            .col-md-pull-1 {
+                right: 4.16666667%
+            }
+            .col-md-pull-0 {
+                right: auto
+            }
+            .col-md-push-24 {
+                left: 100%
+            }
+            .col-md-push-23 {
+                left: 95.83333333%
+            }
+            .col-md-push-22 {
+                left: 91.66666667%
+            }
+            .col-md-push-21 {
+                left: 87.5%
+            }
+            .col-md-push-20 {
+                left: 83.33333333%
+            }
+            .col-md-push-19 {
+                left: 79.16666667%
+            }
+            .col-md-push-18 {
+                left: 75%
+            }
+            .col-md-push-17 {
+                left: 70.83333333%
+            }
+            .col-md-push-16 {
+                left: 66.66666667%
+            }
+            .col-md-push-15 {
+                left: 62.5%
+            }
+            .col-md-push-14 {
+                left: 58.33333333%
+            }
+            .col-md-push-13 {
+                left: 54.16666667%
+            }
+            .col-md-push-12 {
+                left: 50%
+            }
+            .col-md-push-11 {
+                left: 45.83333333%
+            }
+            .col-md-push-10 {
+                left: 41.66666667%
+            }
+            .col-md-push-9 {
+                left: 37.5%
+            }
+            .col-md-push-8 {
+                left: 33.33333333%
+            }
+            .col-md-push-7 {
+                left: 29.16666667%
+            }
+            .col-md-push-6 {
+                left: 25%
+            }
+            .col-md-push-5 {
+                left: 20.83333333%
+            }
+            .col-md-push-4 {
+                left: 16.66666667%
+            }
+            .col-md-push-3 {
+                left: 12.5%
+            }
+            .col-md-push-2 {
+                left: 8.33333333%
+            }
+            .col-md-push-1 {
+                left: 4.16666667%
+            }
+            .col-md-push-0 {
+                left: auto
+            }
+            .col-md-offset-24 {
+                margin-left: 100%
+            }
+            .col-md-offset-23 {
+                margin-left: 95.83333333%
+            }
+            .col-md-offset-22 {
+                margin-left: 91.66666667%
+            }
+            .col-md-offset-21 {
+                margin-left: 87.5%
+            }
+            .col-md-offset-20 {
+                margin-left: 83.33333333%
+            }
+            .col-md-offset-19 {
+                margin-left: 79.16666667%
+            }
+            .col-md-offset-18 {
+                margin-left: 75%
+            }
+            .col-md-offset-17 {
+                margin-left: 70.83333333%
+            }
+            .col-md-offset-16 {
+                margin-left: 66.66666667%
+            }
+            .col-md-offset-15 {
+                margin-left: 62.5%
+            }
+            .col-md-offset-14 {
+                margin-left: 58.33333333%
+            }
+            .col-md-offset-13 {
+                margin-left: 54.16666667%
+            }
+            .col-md-offset-12 {
+                margin-left: 50%
+            }
+            .col-md-offset-11 {
+                margin-left: 45.83333333%
+            }
+            .col-md-offset-10 {
+                margin-left: 41.66666667%
+            }
+            .col-md-offset-9 {
+                margin-left: 37.5%
+            }
+            .col-md-offset-8 {
+                margin-left: 33.33333333%
+            }
+            .col-md-offset-7 {
+                margin-left: 29.16666667%
+            }
+            .col-md-offset-6 {
+                margin-left: 25%
+            }
+            .col-md-offset-5 {
+                margin-left: 20.83333333%
+            }
+            .col-md-offset-4 {
+                margin-left: 16.66666667%
+            }
+            .col-md-offset-3 {
+                margin-left: 12.5%
+            }
+            .col-md-offset-2 {
+                margin-left: 8.33333333%
+            }
+            .col-md-offset-1 {
+                margin-left: 4.16666667%
+            }
+            .col-md-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        @media(min-width:1200px) {
+            .col,
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12,
+            .col-lg-13,
+            .col-lg-14,
+            .col-lg-15,
+            .col-lg-16,
+            .col-lg-17,
+            .col-lg-18,
+            .col-lg-19,
+            .col-lg-20,
+            .col-lg-21,
+            .col-lg-22,
+            .col-lg-23,
+            .col-lg-24 {
+                float: left
+            }
+            .col-lg-24 {
+                width: 100%
+            }
+            .col-lg-23 {
+                width: 95.83333333%
+            }
+            .col-lg-22 {
+                width: 91.66666667%
+            }
+            .col-lg-21 {
+                width: 87.5%
+            }
+            .col-lg-20 {
+                width: 83.33333333%
+            }
+            .col-lg-19 {
+                width: 79.16666667%
+            }
+            .col-lg-18 {
+                width: 75%
+            }
+            .col-lg-17 {
+                width: 70.83333333%
+            }
+            .col-lg-16 {
+                width: 66.66666667%
+            }
+            .col-lg-15 {
+                width: 62.5%
+            }
+            .col-lg-14 {
+                width: 58.33333333%
+            }
+            .col-lg-13 {
+                width: 54.16666667%
+            }
+            .col-lg-12 {
+                width: 50%
+            }
+            .col-lg-11 {
+                width: 45.83333333%
+            }
+            .col-lg-10 {
+                width: 41.66666667%
+            }
+            .col-lg-9 {
+                width: 37.5%
+            }
+            .col-lg-8 {
+                width: 33.33333333%
+            }
+            .col-lg-7 {
+                width: 29.16666667%
+            }
+            .col-lg-6 {
+                width: 25%
+            }
+            .col-lg-5 {
+                width: 20.83333333%
+            }
+            .col-lg-4 {
+                width: 16.66666667%
+            }
+            .col-lg-3 {
+                width: 12.5%
+            }
+            .col-lg-2 {
+                width: 8.33333333%
+            }
+            .col-lg-1 {
+                width: 4.16666667%
+            }
+            .col-lg-pull-24 {
+                right: 100%
+            }
+            .col-lg-pull-23 {
+                right: 95.83333333%
+            }
+            .col-lg-pull-22 {
+                right: 91.66666667%
+            }
+            .col-lg-pull-21 {
+                right: 87.5%
+            }
+            .col-lg-pull-20 {
+                right: 83.33333333%
+            }
+            .col-lg-pull-19 {
+                right: 79.16666667%
+            }
+            .col-lg-pull-18 {
+                right: 75%
+            }
+            .col-lg-pull-17 {
+                right: 70.83333333%
+            }
+            .col-lg-pull-16 {
+                right: 66.66666667%
+            }
+            .col-lg-pull-15 {
+                right: 62.5%
+            }
+            .col-lg-pull-14 {
+                right: 58.33333333%
+            }
+            .col-lg-pull-13 {
+                right: 54.16666667%
+            }
+            .col-lg-pull-12 {
+                right: 50%
+            }
+            .col-lg-pull-11 {
+                right: 45.83333333%
+            }
+            .col-lg-pull-10 {
+                right: 41.66666667%
+            }
+            .col-lg-pull-9 {
+                right: 37.5%
+            }
+            .col-lg-pull-8 {
+                right: 33.33333333%
+            }
+            .col-lg-pull-7 {
+                right: 29.16666667%
+            }
+            .col-lg-pull-6 {
+                right: 25%
+            }
+            .col-lg-pull-5 {
+                right: 20.83333333%
+            }
+            .col-lg-pull-4 {
+                right: 16.66666667%
+            }
+            .col-lg-pull-3 {
+                right: 12.5%
+            }
+            .col-lg-pull-2 {
+                right: 8.33333333%
+            }
+            .col-lg-pull-1 {
+                right: 4.16666667%
+            }
+            .col-lg-pull-0 {
+                right: auto
+            }
+            .col-lg-push-24 {
+                left: 100%
+            }
+            .col-lg-push-23 {
+                left: 95.83333333%
+            }
+            .col-lg-push-22 {
+                left: 91.66666667%
+            }
+            .col-lg-push-21 {
+                left: 87.5%
+            }
+            .col-lg-push-20 {
+                left: 83.33333333%
+            }
+            .col-lg-push-19 {
+                left: 79.16666667%
+            }
+            .col-lg-push-18 {
+                left: 75%
+            }
+            .col-lg-push-17 {
+                left: 70.83333333%
+            }
+            .col-lg-push-16 {
+                left: 66.66666667%
+            }
+            .col-lg-push-15 {
+                left: 62.5%
+            }
+            .col-lg-push-14 {
+                left: 58.33333333%
+            }
+            .col-lg-push-13 {
+                left: 54.16666667%
+            }
+            .col-lg-push-12 {
+                left: 50%
+            }
+            .col-lg-push-11 {
+                left: 45.83333333%
+            }
+            .col-lg-push-10 {
+                left: 41.66666667%
+            }
+            .col-lg-push-9 {
+                left: 37.5%
+            }
+            .col-lg-push-8 {
+                left: 33.33333333%
+            }
+            .col-lg-push-7 {
+                left: 29.16666667%
+            }
+            .col-lg-push-6 {
+                left: 25%
+            }
+            .col-lg-push-5 {
+                left: 20.83333333%
+            }
+            .col-lg-push-4 {
+                left: 16.66666667%
+            }
+            .col-lg-push-3 {
+                left: 12.5%
+            }
+            .col-lg-push-2 {
+                left: 8.33333333%
+            }
+            .col-lg-push-1 {
+                left: 4.16666667%
+            }
+            .col-lg-push-0 {
+                left: auto
+            }
+            .col-lg-offset-24 {
+                margin-left: 100%
+            }
+            .col-lg-offset-23 {
+                margin-left: 95.83333333%
+            }
+            .col-lg-offset-22 {
+                margin-left: 91.66666667%
+            }
+            .col-lg-offset-21 {
+                margin-left: 87.5%
+            }
+            .col-lg-offset-20 {
+                margin-left: 83.33333333%
+            }
+            .col-lg-offset-19 {
+                margin-left: 79.16666667%
+            }
+            .col-lg-offset-18 {
+                margin-left: 75%
+            }
+            .col-lg-offset-17 {
+                margin-left: 70.83333333%
+            }
+            .col-lg-offset-16 {
+                margin-left: 66.66666667%
+            }
+            .col-lg-offset-15 {
+                margin-left: 62.5%
+            }
+            .col-lg-offset-14 {
+                margin-left: 58.33333333%
+            }
+            .col-lg-offset-13 {
+                margin-left: 54.16666667%
+            }
+            .col-lg-offset-12 {
+                margin-left: 50%
+            }
+            .col-lg-offset-11 {
+                margin-left: 45.83333333%
+            }
+            .col-lg-offset-10 {
+                margin-left: 41.66666667%
+            }
+            .col-lg-offset-9 {
+                margin-left: 37.5%
+            }
+            .col-lg-offset-8 {
+                margin-left: 33.33333333%
+            }
+            .col-lg-offset-7 {
+                margin-left: 29.16666667%
+            }
+            .col-lg-offset-6 {
+                margin-left: 25%
+            }
+            .col-lg-offset-5 {
+                margin-left: 20.83333333%
+            }
+            .col-lg-offset-4 {
+                margin-left: 16.66666667%
+            }
+            .col-lg-offset-3 {
+                margin-left: 12.5%
+            }
+            .col-lg-offset-2 {
+                margin-left: 8.33333333%
+            }
+            .col-lg-offset-1 {
+                margin-left: 4.16666667%
+            }
+            .col-lg-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        .clearfix,
+        .clearfix:before,
+        .clearfix:after,
+        .container:before,
+        .container:after,
+        .container-fluid:before,
+        .container-fluid:after,
+        .row:before,
+        .row:after {
+            content: " ";
+            display: table
+        }
+
+        .clearfix:after,
+        .container:after,
+        .container-fluid:after,
+        .row:after {
+            clear: both
+        }
+
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .pull-right {
+            float: right !important
+        }
+
+        .pull-left {
+            float: left !important
+        }
+
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        @media(max-width:384px) {
+            .col-xxs-1,
+            .col-xxs-2,
+            .col-xxs-3,
+            .col-xxs-4,
+            .col-xxs-5,
+            .col-xxs-6,
+            .col-xxs-7,
+            .col-xxs-8,
+            .col-xxs-9,
+            .col-xxs-10,
+            .col-xxs-11 {
+                float: left
+            }
+            .col-xxs-1 {
+                width: 8.333333333333332%
+            }
+            .col-xxs-2 {
+                width: 16.666666666666664%
+            }
+            .col-xxs-3 {
+                width: 25%
+            }
+            .col-xxs-4 {
+                width: 33.33333333333333%
+            }
+            .col-xxs-5 {
+                width: 41.66666666666667%
+            }
+            .col-xxs-6 {
+                width: 50%
+            }
+            .col-xxs-7 {
+                width: 58.333333333333336%
+            }
+            .col-xxs-8 {
+                width: 66.66666666666666%
+            }
+            .col-xxs-9 {
+                width: 75%
+            }
+            .col-xxs-10 {
+                width: 83.33333333333334%
+            }
+            .col-xxs-11 {
+                width: 91.66666666666666%
+            }
+            .col-xxs-12 {
+                width: 100%
+            }
+            .col-xxs-push-1 {
+                left: 8.333333333333332%
+            }
+            .col-xxs-push-2 {
+                left: 16.666666666666664%
+            }
+            .col-xxs-push-3 {
+                left: 25%
+            }
+            .col-xss-push-4 {
+                left: 33.33333333333333%
+            }
+            .col-xxs-push-5 {
+                left: 41.66666666666667%
+            }
+            .col-xxs-push-6 {
+                left: 50%
+            }
+            .col-xxs-push-7 {
+                left: 58.333333333333336%
+            }
+            .col-xxs-push-8 {
+                left: 66.66666666666666%
+            }
+            .col-xxs-push-9 {
+                left: 75%
+            }
+            .col-xxs-push-10 {
+                left: 83.33333333333334%
+            }
+            .col-xxs-push-11 {
+                left: 91.66666666666666%
+            }
+            .col-xxs-pull-1 {
+                right: 8.333333333333332%
+            }
+            .col-xxs-pull-2 {
+                right: 16.666666666666664%
+            }
+            .col-xxs-pull-3 {
+                right: 25%
+            }
+            .col-xxs-pull-4 {
+                right: 33.33333333333333%
+            }
+            .col-xxs-pull-5 {
+                right: 41.66666666666667%
+            }
+            .col-xxs-pull-6 {
+                right: 50%
+            }
+            .col-xxs-pull-7 {
+                right: 58.333333333333336%
+            }
+            .col-xxs-pull-8 {
+                right: 66.66666666666666%
+            }
+            .col-xxs-pull-9 {
+                right: 75%
+            }
+            .col-xxs-pull-10 {
+                right: 83.33333333333334%
+            }
+            .col-xxs-pull-11 {
+                right: 91.66666666666666%
+            }
+            .col-xxs-offset-1 {
+                margin-left: 8.333333333333332%
+            }
+            .col-xxs-offset-2 {
+                margin-left: 16.666666666666664%
+            }
+            .col-xxs-offset-3 {
+                margin-left: 25%
+            }
+            .col-xxs-offset-4 {
+                margin-left: 33.33333333333333%
+            }
+            .col-xxs-offset-5 {
+                margin-left: 41.66666666666667%
+            }
+            .col-xxs-offset-6 {
+                margin-left: 50%
+            }
+            .col-xxs-offset-7 {
+                margin-left: 58.333333333333336%
+            }
+            .col-xxs-offset-8 {
+                margin-left: 66.66666666666666%
+            }
+            .col-xxs-offset-9 {
+                margin-left: 75%
+            }
+            .col-xxs-offset-10 {
+                margin-left: 83.33333333333334%
+            }
+            .col-xxs-offset-11 {
+                margin-left: 91.66666666666666%
+            }
+        }
+
+        body {
+            background: none transparent;
+            width: 1px;
+            min-width: 100%
+        }
+
+        .image-div {
+            padding-top: 100%;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: 50% 25%;
+            -webkit-transition-property: width, height;
+            -webkit-transition-duration: 500ms;
+            background-color: transparent;
+            position: relative;
+            z-index: 1;
+            display: block;
+            border: 0;
+            margin: 6px 0;
+            cursor: pointer
+        }
+
+        .video-div {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: block;
+            border: 0;
+            margin: 0;
+            cursor: pointer;
+            padding-top: 100%;
+            background-color: #f8f8f8
+        }
+
+        .video-div-full {
+            position: relative;
+            z-index: 1;
+            border: 0;
+            margin: 0;
+            background-color: #f8f8f8
+        }
+
+        .vjs-fullscreen-control.vjs-control.vjs-button {
+            display: none !important
+        }
+
+        .link-video-div .vjs-afterglow-skin .vjs-menu-button.vjs-menu-button-inline,
+        .video-div .vjs-afterglow-skin .vjs-menu-button.vjs-menu-button-inline,
+        .video-div-full .vjs-afterglow-skin .vjs-menu-button.vjs-menu-button-inline {
+            display: none
+        }
+
+        .video-div-full>div {
+            max-width: 100% !important;
+            margin: 0 auto
+        }
+
+        .video-div>div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0
+        }
+
+        .image-wrapper {
+            overflow: hidden;
+            position: relative
+        }
+
+        .gallery-view {
+            padding: 6px 10px
+        }
+
+        .developed-by {
+            text-align: right
+        }
+
+        .developed-by a {
+            float: right
+        }
+
+        .likes-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            position: absolute;
+            left: 5px;
+            bottom: 10px;
+            padding: 1px 2px;
+            z-index: 2;
+            font-size: 13px;
+            display: block
+        }
+
+        .new-likes-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+            font-weight: 600;
+            padding: 2px 4px 1px 3px;
+            left: 0;
+            bottom: 0
+        }
+
+        .likes-box td,
+        .likes-box td img {
+            vertical-align: middle
+        }
+
+        .new-likes-box td img {
+            margin-top: -2px
+        }
+
+        .pagination-button {
+            background: rgba(0, 0, 0, 0) -moz-linear-gradient(0 0 270deg, #f8f8f8, #e9e9e9) repeat scroll 0 0;
+            background: #e9e9e9 none repeat scroll 0 0;
+            border: 1px solid #efefef;
+            border-radius: 3px;
+            color: #414141;
+            display: inline-block;
+            font-size: 15px;
+            margin-right: 4px;
+            padding: 6px 8px 3px;
+            text-decoration: none
+        }
+
+        .pagination-button:hover {
+            background: rgba(0, 0, 0, 0) -moz-linear-gradient(0 0 270deg, #fefefe, #f0f0f0) repeat scroll 0 0
+        }
+
+        .estitle {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 18px;
+            padding: 25px 12px
+        }
+
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            display: block
+        }
+
+        .espagination {
+            border-radius: 4px;
+            display: inline-block;
+            margin: 20px 0;
+            padding-left: 0
+        }
+
+        .espagination>li {
+            display: inline
+        }
+
+        .espagination>li>a,
+        .espagination>li>span {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #444;
+            float: left;
+            font-size: 12px;
+            line-height: 1.42857;
+            margin-left: -1px;
+            padding: 3px 8px;
+            position: relative;
+            text-decoration: none
+        }
+
+        .espagination>li:first-child>a,
+        .espagination>li:first-child>span {
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            margin-left: 0
+        }
+
+        .espagination>li:last-child>a,
+        .espagination>li:last-child>span {
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px
+        }
+
+        .espagination>li>a:hover,
+        .espagination>li>span:hover,
+        .espagination>li>a:focus,
+        .espagination>li>span:focus {
+            background-color: #eee
+        }
+
+        .espagination>.active>a,
+        .espagination>.active>span,
+        .espagination>.active>a:hover,
+        .espagination>.active>span:hover,
+        .espagination>.active>a:focus,
+        .espagination>.active>span:focus {
+            background-color: #428bca;
+            border-color: #428bca;
+            color: #fff;
+            cursor: default;
+            z-index: 2
+        }
+
+        .espagination>.disabled>span,
+        .espagination>.disabled>a,
+        .espagination>.disabled>a:hover,
+        .espagination>.disabled>a:focus {
+            background-color: #fff;
+            border-color: #ddd;
+            color: #999;
+            cursor: not-allowed
+        }
+
+        .new-pagination-button {
+            text-decoration: none;
+            font-size: 14px
+        }
+
+        .new-espagination {
+            border-radius: 0;
+            display: inline-block;
+            margin: 20px 0;
+            padding-left: 0
+        }
+
+        .new-espagination>li {
+            display: block;
+            float: left;
+            margin: 0 0 5px 5px
+        }
+
+        .new-espagination>li:first-child {
+            margin-left: 0
+        }
+
+        .new-espagination>li>a,
+        .new-espagination>li>span {
+            display: block;
+            float: none;
+            margin: 0;
+            color: #646464;
+            font-weight: 600;
+            border: 0;
+            position: relative;
+            padding: 4px 8px;
+            line-height: 1.42857143;
+            background-color: #fff
+        }
+
+        .new-espagination>li:first-child>a,
+        .new-espagination>li:first-child>span {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0
+        }
+
+        .new-espagination>li:last-child>a,
+        .new-espagination>li:last-child>span {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .new-espagination>li>a:hover,
+        .new-espagination>li>span:hover,
+        .new-espagination>li>a:focus,
+        .new-espagination>li>span:focus {
+            color: #0081ff;
+            background-color: rgba(255, 255, 255, 0.2);
+            -webkit-box-shadow: 0 2px #0081ff;
+            box-shadow: 0 2px #0081ff
+        }
+
+        .new-espagination>.active>a,
+        .new-espagination>.active>span,
+        .new-espagination>.active>a:hover,
+        .new-espagination>.active>span:hover,
+        .new-espagination>.active>a:focus,
+        .new-espagination>.active>span:focus {
+            color: #0081ff;
+            background-color: #f9f9f9;
+            -webkit-box-shadow: 0 2px #0081ff;
+            box-shadow: 0 2px #0081ff;
+            z-index: 3;
+            cursor: default;
+            border-color: #0081ff
+        }
+
+        .new-espagination>.disabled>span,
+        .new-espagination>.disabled>a,
+        .new-espagination>.disabled>a:hover,
+        .new-espagination>.disabled>a:focus {
+            background-color: #fff;
+            border-color: #ddd;
+            color: #c9c9c9;
+            cursor: not-allowed;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+        .new-pagination-button-prev,
+        .new-pagination-button-next {
+            text-decoration: none;
+            font-size: 14px;
+            background-color: #f9f9f9 !important
+        }
+
+        #load-more-pages-btn {
+            background-color: #0081ff;
+            border-radius: 4px;
+            font-weight: 500;
+            text-transform: uppercase
+        }
+
+        #load-more-pages-btn:hover,
+        #load-more-pages-btn:focus {
+            border-color: #0081ff;
+            background-color: #fff;
+            color: #0081ff;
+            border-radius: 4px
+        }
+
+        #load-more-pages-btn-2 {
+            background-color: rgba(255, 255, 255, 1);
+            font-family: 'LucidaGrande', Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(38, 38, 38, 1);
+            height: 45px;
+            box-sizing: border-box;
+            width: 283px;
+            text-transform: capitalize;
+            transition-duration: .1s;
+            transition-timing-function: ease-in-out;
+            padding: 10px;
+            left: calc(50% - 141.5px);
+            border-radius: 4px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgba(128, 129, 132, 1)
+        }
+
+        #load-more-pages-btn-2:hover,
+        #load-more-pages-btn-2:focus {
+            background-color: rgba(255, 255, 255, 0);
+            -webkit-box-shadow: 0 0 1px 2px rgba(118, 189, 248, 1);
+            -moz-box-shadow: 0 0 1px 2px rgba(118, 189, 248, 1);
+            box-shadow: 0 0 1px 2px rgba(118, 189, 248, 1)
+        }
+
+        .album-description {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 75%;
+            padding: 0 12px 25px
+        }
+
+        .album-description-new {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: left;
+            padding: 0 15px 15px
+        }
+
+        .new-call-to-action-btn.btn-primary,
+        .new-call-to-action-btn-full-size.btn-primary,
+        .new-call-to-action-btn_row.btn-primary {
+            padding: 8px 10px;
+            background: #0081ff;
+            border: transparent;
+            color: #fff;
+            text-transform: capitalize
+        }
+
+        .new-call-to-action-btn.btn-primary:hover,
+        .new-call-to-action-btn-full-size:hover,
+        .new-call-to-action-btn_row.btn-primary:hover {
+            background-color: #3c7ac9;
+            border: transparent;
+            text-transform: capitalize
+        }
+
+        .embed_slider_photo[data-sourcelink] {
+            cursor: pointer
+        }
+
+        .tag-indicator {
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            height: 30px;
+            left: 8px;
+            line-height: 30px;
+            position: absolute;
+            top: 8px;
+            transition: all .1s ease;
+            width: 30px;
+            z-index: 999
+        }
+
+        .tag-indicator>svg {
+            float: left;
+            margin-left: 6px;
+            margin-top: 6px;
+            position: initial !important
+        }
+
+        .tag-indicator>span {
+            display: none;
+            opacity: 0;
+            padding-left: 30px
+        }
+
+        .tag-indicator:hover {
+            width: 105px
+        }
+
+        .tag-indicator:hover>span {
+            display: block;
+            opacity: 1
+        }
+
+        .tag-indicator-button {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+            box-sizing: border-box;
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 6px 12px
+        }
+
+        .tag-indicator-button svg {
+            float: left;
+            margin-right: 2px;
+            margin-top: 2px;
+            position: initial !important
+        }
+
+        .jssor_list_slider .tag-indicator {
+            bottom: 8px;
+            top: auto;
+            left: auto;
+            right: 8px
+        }
+
+        #es-header .es-free svg {
+            float: left;
+            margin-right: 8px
+        }
+
+        #es-header .inline-table {
+            display: -webkit-inline-box
+        }
+
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .powered-by .es-free,
+        .powered-by .es-free a {
+            color: #9ca0ac;
+            font-size: 14px
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .es-powered-by {
+            display: inline-block;
+            float: right;
+            margin: 20px 0
+        }
+
+        .es-powered-by a.feed-powered-by-es {
+            bottom: 40px;
+            color: #9ca0ac;
+            font-family: sans-serif;
+            font-size: 14px;
+            position: absolute;
+            right: 38px;
+            text-decoration: none
+        }
+
+        html,
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif
+        }
+
+        .photo-title>div,
+        .media-title>div {
+            padding: 5px 0
+        }
+
+        .image-wrapper>a.link-img {
+            position: relative
+        }
+
+        .image-wrapper a.link-img {
+            border: 2px solid #eef1f7;
+            display: block
+        }
+
+        .image-wrapper a.link-img-feed {
+            border: 2px solid #eef1f7;
+            border-bottom: 2px solid #fff
+        }
+
+        .slideshow-feed,
+        .list-slider-feed,
+        .photo-slider-feed {
+            border: 2px solid transparent
+        }
+
+        .embed_slider_photo {
+            border: 2px solid #eef1f7
+        }
+
+        .carousel-feed {
+            border: 2px solid #eef1f7;
+            overflow: hidden
+        }
+
+        .carousel-slider-feed.embed_slider_photo,
+        .thumbnavigator_jssort01 .w {
+            border: 0
+        }
+
+        .image-div {
+            margin: 0
+        }
+
+        .image-div-full {
+            height: 210px;
+            width: 100%;
+            -webkit-transition-property: width, height;
+            -webkit-transition-duration: 500ms;
+            position: relative;
+            z-index: 1;
+            border: 0;
+            margin: 0;
+            background-color: #f8f8f8
+        }
+
+        .full-img {
+            max-height: 210px;
+            display: inline-block
+        }
+
+        .div-img {
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            text-align: center
+        }
+
+        .div-img-likes {
+            position: relative;
+            display: inline-block
+        }
+
+        .read-more-btn {
+            background: none !important;
+            border: 0;
+            padding: 0 !important;
+            font: inherit;
+            cursor: pointer;
+            color: #428bca
+        }
+
+        .justified-item>a.link-img>img {
+            height: 100%;
+            max-width: 100%
+        }
+
+        .prev-next {
+            text-align: right;
+            padding-bottom: 25px
+        }
+
+        .back-btn {
+            background-color: #fff;
+            width: 60px;
+            height: 40px;
+            border: 1px solid #444;
+            color: #444;
+            vertical-align: middle;
+            border-radius: 3px;
+            font-size: 12px;
+            padding: 0 10px;
+            position: absolute;
+            top: 30%
+        }
+
+        .back-row {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        }
+
+        .back-btn-title {
+            cursor: pointer;
+            color: #333;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px 10px;
+            border-radius: 3px
+        }
+
+        .back-btn-title svg {
+            display: inline-block;
+            width: 12px;
+            height: 10px;
+            margin: -2px 2px 0 0;
+            vertical-align: middle
+        }
+
+        .back-btn-title:hover,
+        .back-btn-title:focus,
+        .back-btn-title:hover svg,
+        .back-btn-title:focus svg {
+            color: #555 !important
+        }
+
+        .title-box-num-photos {
+            color: #777;
+            font-size: 12px;
+            text-align: left;
+            padding: 5px 15px 15px
+        }
+
+        .gallery-view-p {
+            margin-left: 15px;
+            margin-right: 15px
+        }
+
+        #loading-more-div {
+            text-align: center;
+            display: none;
+            padding-top: 15px;
+            padding-bottom: 10px
+        }
+
+        #loading-more-div img {
+            height: 40px
+        }
+
+        #load-more-div {
+            text-align: center
+        }
+
+        .new-call-to-action-btn,
+        .new-call-to-action-btn-full-size {
+            color: rgba(0, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 2px;
+            padding: 5px 12px;
+            transition: all 150ms ease;
+            text-transform: none;
+            font-weight: 600;
+            position: absolute;
+            right: 5px;
+            text-decoration: none
+        }
+
+        .new-call-to-action-btn:hover,
+        .new-call-to-action-btn-full-size:hover {
+            color: rgba(255, 255, 255, 0.9);
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.6)
+        }
+
+        .link-img {
+            cursor: pointer
+        }
+
+        .carousel-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 39px !important;
+            height: 39px !important
+        }
+
+        .carousel-img-masonry-2 {
+            top: 6px;
+            right: 21px;
+            width: 23px !important;
+            height: 23px !important
+        }
+
+        .back-row,
+        .album-title-box-new {
+            text-transform: uppercase
+        }
+
+        .album-description,
+        .album-description-new {
+            color: \23 111111;
+        }
+
+        .img-avatar {
+            display: inline-block !important;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover
+        }
+
+        .img-avatar-thumb {
+            margin: 5px;
+            -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4)
+        }
+
+        .img-avatar.img-avatar48 {
+            width: 48px;
+            height: 48px
+        }
+
+        .photo-title-feed,
+        .media-title-feed {
+            cursor: pointer;
+            font-size: 13px;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            color: #22262e;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 1.6;
+            word-break: break-word;
+            word-wrap: break-word;
+            background-color: #fff;
+            margin-bottom: 0;
+            text-align: left;
+            border-top: 0;
+            overflow: visible;
+            padding: 15px 20px 20px
+        }
+
+        .photo-title-feed {
+            border: 2px solid #eef1f7;
+            border-top: 0
+        }
+
+        .photo-title-feed-2 {
+            border: 0;
+            padding: 0
+        }
+
+        .photo-title-feed-2>div {
+            border: 2px solid #eef1f7;
+            border-bottom: 0;
+            padding-bottom: 15px
+        }
+
+        .photo-title-feed-2 hr {
+            margin: 13px 10px 0 10px
+        }
+
+        .photo-title-feed-3 {
+            font-size: 15px;
+            line-height: 1.5em;
+            padding: 5px
+        }
+
+        .photo-title-feed-4 {
+            border: 0;
+            padding: 0
+        }
+
+        .photo-title-feed-4>div {
+            border: 2px solid #eef1f7
+        }
+
+        .photo-title-feed-4 hr {
+            margin: 13px 10px 0 10px
+        }
+
+        .image-feed {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto
+        }
+
+        .image-feed-div {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            min-height: 40px;
+            background: #fff;
+            border: 0;
+            border-bottom: 0
+        }
+
+        .from-details {
+            margin-top: 10px;
+            margin-bottom: 15px
+        }
+
+        .from-details-feed-2 {
+            position: relative;
+            height: 24px;
+            margin: 21px 10px
+        }
+
+        .from-details-feed-2.from-username {
+            min-height: 42px;
+            margin: 11px 10px
+        }
+
+        .from-details-feed-2 a {
+            text-decoration: none
+        }
+
+        .username {
+            color: #0081ff;
+            font-weight: 600 !important;
+            cursor: pointer;
+        }
+
+        .source-logo-fixed {
+            bottom: 5px;
+            left: 5px;
+            position: absolute
+        }
+
+        .source-logo:hover {
+            cursor: pointer
+        }
+
+        .source-logo {
+            margin-top: 20px;
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px
+        }
+
+        .source-logo svg {
+            width: 24px !important;
+            height: 24px !important;
+            cursor: pointer;
+        }
+
+        .source-logo-text {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 0;
+            padding: 0 !important
+        }
+
+        .source-logo-feed-2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 0
+        }
+
+        .source-logo-feed-3 {
+            position: absolute;
+            bottom: 4.5px;
+            left: 5px;
+            margin-top: 0
+        }
+
+        .carousel-img-feed {
+            z-index: 2;
+            right: 0
+        }
+
+        .video-img {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 2;
+            width: 33px !important;
+            height: 23px !important
+        }
+
+        .video-img-masonry-2 {
+            top: 10px;
+            right: 25px;
+            width: 23px !important;
+            height: 16px !important
+        }
+
+        .from-details>a {
+            text-decoration: none
+        }
+
+        .photo-title-masonry>div,
+        .media-title-masonry>div {
+            padding: 10px;
+            padding-bottom: 20px
+        }
+
+        .image-feed {
+            border-bottom: 0
+        }
+
+        .image-div {
+            background-color: #fff
+        }
+
+        .post-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-weight: 500;
+            color: #707070;
+            font-size: 16px;
+            line-height: 1.2em;
+            text-align: center;
+            height: 100%
+        }
+
+        .post-text {
+            height: calc(100% - 40px);
+            padding: 20px;
+            overflow-y: hidden;
+            word-break: break-word;
+            word-wrap: break-word
+        }
+
+        .post-hover {
+            opacity: 0;
+            background-color: #fff;
+            -webkit-transition: opacity .5s;
+            transition: opacity .5s
+        }
+
+        .photo-title,
+        .media-title {
+            cursor: pointer;
+            font-size: 13px;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            color: #22262e;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 1.6;
+            word-break: break-word;
+            word-wrap: break-word
+        }
+
+        .photo-title-masonry,
+        .media-title-masonry {
+            border: 2px solid #eef1f7;
+            border-top: 0;
+            background-color: #fff;
+            margin-bottom: 0;
+            text-align: left
+        }
+
+        .swiper-slide {
+            background-color: rgba(0, 0, 0, 0.03);
+            border: 2px solid #eef1f7
+        }
+
+        .feed-2-created {
+            color: #ccc;
+            font-style: italic
+        }
+
+        .title-feed-2-text {
+            overflow: hidden;
+            padding: 10px 10px 0 10px;
+            max-height: 70px
+        }
+
+        .title-feed-4-text {
+            overflow: hidden;
+            padding: 10px;
+            margin-bottom: 15px;
+            max-height: 70px
+        }
+
+        .likes-box {
+            left: auto;
+            right: 5px
+        }
+
+        .new-likes-box {
+            left: auto;
+            right: 0;
+            padding: 1px 3px
+        }
+
+        .username-f4 {
+            display: block;
+            width: calc(100% - (10px + 24px));
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .verified-source {
+            position: absolute;
+            top: 1px
+        }
+
+        .post-hover:hover {
+            opacity: 1
+        }
+
+        .source-logo-custom>div,
+        .source-logo-tiktok>div {
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat
+        }
+
+        .post-details {
+            display: table;
+            width: calc(100% - 20px);
+            margin: 11px 10px;
+            min-height: 42px;
+            height: 42px
+        }
+
+        .post-details a {
+            text-decoration: none
+        }
+
+        .post-details>div {
+            display: table-cell;
+            vertical-align: middle
+        }
+
+        .post-details .post-created {
+            color: #ccc;
+            font-style: italic;
+            max-width: calc(100% - 5px)
+        }
+
+        .post-details .source-logo {
+            margin-top: 0;
+            float: right
+        }
+
+        .f-border-black-2:focus {
+            border-radius: 3px;
+            border: 2px solid #3d3d3d !important;
+            outline: 0
+        }
+
+        .es-tag-indicator {
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            height: 30px;
+            left: 8px;
+            line-height: 30px;
+            position: absolute;
+            top: 8px;
+            transition: all .1s ease;
+            width: 30px;
+            z-index: 999
+        }
+
+        .es-tag-indicator>svg {
+            float: left;
+            margin-left: 6px;
+            margin-top: 6px;
+            position: initial !important
+        }
+
+        .es-tag-indicator>span {
+            display: none;
+            opacity: 0;
+            padding-left: 30px
+        }
+
+        .es-tag-indicator:hover {
+            width: 105px
+        }
+
+        .es-tag-indicator:hover>span {
+            display: block;
+            opacity: 1
+        }
+
+        .es-tag-indicator-button {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+            box-sizing: border-box;
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 6px 12px
+        }
+
+        .es-tag-indicator-button svg {
+            float: left;
+            margin-right: 2px;
+            margin-top: 2px;
+            position: initial !important
+        }
+
+        .masonry-2-wrapper .es-tag-indicator {
+            left: 20px
+        }
+
+        .jssor_list_slider .es-tag-indicator {
+            left: auto;
+            right: 8px
+        }
+
+        @media only screen and (max-width:380px) {
+            .post-details .username {
+                max-width: 100px;
+                width: 80%
+            }
+            .post-details .post-created {
+                max-width: 100px;
+                width: 80%
+            }
+            .post-details {
+                min-height: 64px;
+                height: 64px
+            }
+        }
+
+        @media only screen and (max-width:300px) {
+            .post-details .username {
+                max-width: 60px;
+                width: 80%
+            }
+            .post-details .post-created {
+                max-width: 60px;
+                width: 80%
+            }
+        }
+
+        @media only screen and (max-width:280px) {
+            .post-details {
+                min-height: 80px;
+                height: 80px
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            .post-details {
+                min-height: 62px;
+                height: 62px
+            }
+        }
+
+        .video-img-feed {
+            top: 16px;
+        }
+
+        .carousel-img-feed {
+            top: 11px;
+        }
+
+        .col-fixed {
+            float: left;
+            min-height: 1px;
+        }
+
+        .gutter-images {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .image-wrapper {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .title-box-new {
+            color: #111111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 15px 15px 0px;
+            text-align: left;
+        }
+
+        .title-box {
+            color: #111111;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 149px) {
+            .new-call-to-action-btn,
+            .new-call-to-action-btn-full-size {
+                top: 5px;
+            }
+        }
+
+        @media screen and (min-width: 150px) {
+            .new-call-to-action-btn-full-size {
+                bottom: 10px;
+            }
+            .new-call-to-action-btn {
+                bottom: 5px;
+            }
+        }
+
+        .cta-feed {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .cta-feed-3 {
+            float: right;
+            left: 0;
+            margin-top: 5px;
+            position: relative;
+            top: 0;
+        }
+
+        .cta-text {
+            bottom: 5px;
+            height: 26px;
+            line-height: 12px;
+        }
+
+        .cta-text-masonry-2 {
+            bottom: 14px;
+            right: 15px;
+        }
+
+        #new-feed-media,
+        #new-next-page-num {
+            display: none;
+        }
+
+        .caption-text,
+        .photo-title-feed,
+        .media-title-feed {
+            font-size: 16px;
+            line-height: 28px;
+            color: #333333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .username {
+            color: #DA0000;
+        }
+
+        #load-more-pages-btn {
+            background-color: #DA0000;
+            border-color: #DA0000;
+        }
+
+        .images-layout+.row {
+            display: none;
+        }
+
+        .media-div {
+            max-width: 100%;
+            padding: 0;
+            max-height: none !important;
+        }
+
+        .lightbox-box {
+            margin-top: 0;
+        }
+
+        .caption-text {
+            max-height: none;
+        }
+
+        .img-responsive,
+        .media-div img {
+            display: block;
+            max-height: none !important;
+        }
+
+        .swiper-container {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-24">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gallery-view">
+        <div class="row gallery images-layout" data-viewport="desktop">
+            <div class="col-sm-8 col-xs-24 col-grid-responsive gutter-images" id="col_0">
+                <div class="image-wrapper post-media-div f-post-17931764934041021 f-border-black-2" id="image_wrapper_17931764934041021" data-id="0">
+                    <img src="https://embedsocial.com/cdn/icon/ivideo.png" alt="Representation icon for a video post." class='video-img video-img-feed' />
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('0', '0', '17931764934041021', '131710294')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('0', '0', '17931764934041021', '131710294')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/17931/17931764934041021/image_0.jpeg" alt="Video post from airzermatt." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <div class="from-details">
+                            <a href="https://instagram.com/airzermatt" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">airzermatt</span></a> on <span class="f-media-date ">
+                    April 27, 2025                </span>
+                        </div>
+                        <div id="media_title_17931764934041021" onclick="showLightbox('0', '0', '17931764934041021', '131710294')" title='CEO Talk👨‍💼
+Goals, visions, expectations - how Daniel Aufdenblatten imagines the future of Air Zermatt.🎬#AirZermatt #CEOTalk'>
+                            CEO Talk👨‍💼 Goals, visions, expectations - how Daniel Aufdenblatten imagines the future of Air Zermatt.🎬#AirZermatt #CEOTalk </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://instagram.com/airzermatt', 'instagram')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://instagram.com/airzermatt', 'instagram')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Instagram logo.">
+    <path d="M15.0049 0C8.74253 0 6.91103 0.00646208 6.55502 0.036003C5.26988 0.142858 4.47019 0.34526 3.59896 0.779143C2.92755 1.11263 2.39804 1.4992 1.87544 2.0411C0.923698 3.02933 0.346883 4.24513 0.138077 5.69033C0.0365572 6.39193 0.00702432 6.53502 0.00102545 10.1187C-0.00128181 11.3133 0.00102545 12.8854 0.00102545 14.9941C0.00102545 21.2531 0.00794722 23.0833 0.0379416 23.4387C0.141768 24.6896 0.337885 25.4765 0.753192 26.3374C1.54689 27.9852 3.06276 29.2222 4.84858 29.6838C5.46692 29.8431 6.14987 29.9308 7.02663 29.9723C7.3981 29.9885 11.1843 30 14.9728 30C18.7613 30 22.5499 29.9954 22.9121 29.9769C23.9273 29.9292 24.5168 29.85 25.1686 29.6815C26.966 29.2176 28.4541 27.9991 29.264 26.3282C29.6712 25.4881 29.8777 24.6711 29.9712 23.4855C29.9915 23.227 30 19.1058 30 14.9902C30 10.8738 29.9908 6.76026 29.9705 6.50178C29.8759 5.29706 29.6694 4.487 29.249 3.63077C28.9041 2.92986 28.521 2.40643 27.965 1.87124C26.9726 0.923155 25.759 0.346183 24.3128 0.13755C23.6121 0.0362338 23.4725 0.0062313 19.8871 0H15.0049Z" fill="url(#paint0_radial_instagram)"></path>
+    <path d="M15.0049 0C8.74253 0 6.91103 0.00646208 6.55502 0.036003C5.26988 0.142858 4.47019 0.34526 3.59896 0.779143C2.92755 1.11263 2.39804 1.4992 1.87544 2.0411C0.923698 3.02933 0.346883 4.24513 0.138077 5.69033C0.0365572 6.39193 0.00702432 6.53502 0.00102545 10.1187C-0.00128181 11.3133 0.00102545 12.8854 0.00102545 14.9941C0.00102545 21.2531 0.00794722 23.0833 0.0379416 23.4387C0.141768 24.6896 0.337885 25.4765 0.753192 26.3374C1.54689 27.9852 3.06276 29.2222 4.84858 29.6838C5.46692 29.8431 6.14987 29.9308 7.02663 29.9723C7.3981 29.9885 11.1843 30 14.9728 30C18.7613 30 22.5499 29.9954 22.9121 29.9769C23.9273 29.9292 24.5168 29.85 25.1686 29.6815C26.966 29.2176 28.4541 27.9991 29.264 26.3282C29.6712 25.4881 29.8777 24.6711 29.9712 23.4855C29.9915 23.227 30 19.1058 30 14.9902C30 10.8738 29.9908 6.76026 29.9705 6.50178C29.8759 5.29706 29.6694 4.487 29.249 3.63077C28.9041 2.92986 28.521 2.40643 27.965 1.87124C26.9726 0.923155 25.759 0.346183 24.3128 0.13755C23.6121 0.0362338 23.4725 0.0062313 19.8871 0H15.0049Z" fill="url(#paint1_radial_instagram)"></path>
+    <path d="M14.998 3.9234C11.9902 3.9234 11.6128 3.93656 10.4314 3.99033C9.25244 4.04433 8.44767 4.23104 7.74349 4.50499C7.01509 4.78794 6.39721 5.16643 5.78163 5.7824C5.16559 6.39815 4.7872 7.0162 4.50341 7.74457C4.22885 8.44917 4.04196 9.25439 3.98889 10.4333C3.93605 11.6149 3.92221 11.9927 3.92221 15.0013C3.92221 18.0098 3.93559 18.3862 3.98912 19.5679C4.04334 20.7472 4.23 21.5522 4.50364 22.2566C4.78674 22.9852 5.16513 23.6032 5.78094 24.219C6.39628 24.8352 7.01417 25.2146 7.74211 25.4975C8.44674 25.7715 9.25175 25.9582 10.4305 26.0122C11.6118 26.066 11.9891 26.0791 14.9966 26.0791C18.0046 26.0791 18.3809 26.066 19.5622 26.0122C20.7412 25.9582 21.5469 25.7715 22.2515 25.4975C22.9797 25.2146 23.5967 24.8352 24.212 24.219C24.828 23.6032 25.2064 22.9852 25.4902 22.2568C25.7625 21.5522 25.9494 20.747 26.0048 19.5681C26.0578 18.3865 26.0717 18.0098 26.0717 15.0013C26.0717 11.9927 26.0578 11.6151 26.0048 10.4335C25.9494 9.25416 25.7625 8.44917 25.4902 7.7448C25.2064 7.0162 24.828 6.39815 24.212 5.7824C23.596 5.1662 22.9799 4.7877 22.2508 4.50499C21.5448 4.23104 20.7396 4.04433 19.5606 3.99033C18.3793 3.93656 18.0032 3.9234 14.9945 3.9234H14.998ZM14.0045 5.91972C14.2993 5.91926 14.6284 5.91972 14.998 5.91972C17.955 5.91972 18.3054 5.93034 19.4731 5.98342C20.5529 6.03281 21.139 6.21329 21.5294 6.36492C22.0462 6.5657 22.4147 6.80572 22.802 7.19345C23.1897 7.58117 23.4296 7.95043 23.6308 8.4674C23.7824 8.85743 23.9631 9.44364 24.0122 10.5237C24.0653 11.6915 24.0768 12.0423 24.0768 14.9987C24.0768 17.9551 24.0653 18.3059 24.0122 19.4737C23.9628 20.5538 23.7824 21.14 23.6308 21.53C23.4301 22.047 23.1897 22.4151 22.802 22.8026C22.4144 23.1903 22.0464 23.4304 21.5294 23.6311C21.1394 23.7835 20.5529 23.9635 19.4731 24.0129C18.3057 24.066 17.955 24.0775 14.998 24.0775C12.0408 24.0775 11.6903 24.066 10.5228 24.0129C9.44302 23.963 8.85697 23.7825 8.46636 23.6309C7.94953 23.4301 7.58037 23.1901 7.19275 22.8024C6.80513 22.4147 6.56518 22.0463 6.36398 21.5291C6.2124 21.1391 6.03174 20.5529 5.98259 19.4728C5.92953 18.305 5.91891 17.9542 5.91891 14.996C5.91891 12.0377 5.92953 11.6888 5.98259 10.521C6.03197 9.44087 6.2124 8.85466 6.36398 8.46417C6.56471 7.9472 6.80513 7.57794 7.19275 7.19022C7.58037 6.80249 7.94953 6.56247 8.46636 6.36122C8.85674 6.2089 9.44302 6.02889 10.5228 5.97927C11.5445 5.93311 11.9404 5.91926 14.0045 5.91695V5.91972ZM20.9096 7.75911C20.1759 7.75911 19.5806 8.35385 19.5806 9.08799C19.5806 9.8219 20.1759 10.4173 20.9096 10.4173C21.6433 10.4173 22.2386 9.8219 22.2386 9.08799C22.2386 8.35408 21.6433 7.75865 20.9096 7.75865V7.75911ZM14.998 9.31232C11.8571 9.31232 9.31058 11.8595 9.31058 15.0013C9.31058 18.143 11.8571 20.6891 14.998 20.6891C18.1388 20.6891 20.6844 18.143 20.6844 15.0013C20.6844 11.8595 18.1386 9.31232 14.9977 9.31232H14.998ZM14.998 11.3086C17.0367 11.3086 18.6896 12.9618 18.6896 15.0013C18.6896 17.0405 17.0367 18.6939 14.998 18.6939C12.959 18.6939 11.3064 17.0405 11.3064 15.0013C11.3064 12.9618 12.959 11.3086 14.998 11.3086V11.3086Z" fill="white"></path>
+    <defs>
+        <radialGradient id="paint0_radial_instagram" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.96879 32.3106) rotate(-90) scale(29.7322 27.6533)">
+            <stop stop-color="#FFDD55"></stop>
+            <stop offset="0.1" stop-color="#FFDD55"></stop>
+            <stop offset="0.5" stop-color="#FF543E"></stop>
+            <stop offset="1" stop-color="#C837AB"></stop>
+        </radialGradient>
+        <radialGradient id="paint1_radial_instagram" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-5.02516 2.16115) rotate(78.6806) scale(13.2904 54.7837)">
+            <stop stop-color="#3771C8"></stop>
+            <stop offset="0.128" stop-color="#3771C8"></stop>
+            <stop offset="1" stop-color="#6600FF" stop-opacity="0"></stop>
+        </radialGradient>
+    </defs>
+</svg> </div>
+                    </div>
+                </div>
+                <div class="image-wrapper post-media-div f-post-232500263453549_1110979667720734 f-border-black-2" id="image_wrapper_232500263453549_1110979667720734" data-id="3">
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('3', '0', '232500263453549_1110979667720734', '131305029')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('3', '0', '232500263453549_1110979667720734', '131305029')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/23250/232500263453549_1110979667720734/image_0.jpeg" alt="Photo post from Air Zermatt AG." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <img style="margin-top: -50px;" class="img-avatar img-avatar48 img-avatar-thumb" src="https://embedsocial.com/admin/source-cover-photo-link/232500263453549.jpeg" alt="User profile - Air Zermatt AG.">
+                        <div class="from-details">
+                            <a href="https://www.facebook.com/232500263453549" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">Air Zermatt AG</span></a> on <span class="f-media-date ">
+                    April 22, 2025                </span>
+                        </div>
+                        <div id="media_title_232500263453549_1110979667720734" onclick="showLightbox('3', '0', '232500263453549_1110979667720734', '131305029')" title='ALPHA ZULU BLOG💥
+Besonders in Schutzwäldern, die vor Lawinen und Steinschlägen schützen, ist ein regelmässiger Holzeinschlag notwendig, um ihre Schutzfunktion zu erhalten. Wie das sogenannte Logging mit der Air Zermatt abläuft, erfährst du in unserem neusten Blogbeitrag👇
+
+#AirZermatt #Logging #Frühjahrsputz '>
+                            ALPHA ZULU BLOG💥 Besonders in Schutzwäldern, die vor Lawinen und Steinschlägen schützen, ist ein regelmässiger Holzeinschlag notwendig, um ihre Schutzfunktion zu erhalten. Wie das sogenannte Logging m... </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook logo.">
+    <circle cx="15" cy="15" r="15" fill="white"></circle>
+    <path d="M15.0001 0C6.71586 0 0 6.74391 0 15.0628C0 22.5239 5.40783 28.7029 12.4984 29.8994V18.2053H8.87992V13.9971H12.4984V10.8941C12.4984 7.29375 14.6882 5.33177 17.8871 5.33177C19.4191 5.33177 20.7357 5.44641 21.1179 5.4969V9.26021L18.8993 9.26129C17.16 9.26129 16.8247 10.0911 16.8247 11.3092V13.9949H20.9748L20.4335 18.2032H16.8247V30C24.2463 29.093 30 22.7566 30 15.0584C30 6.74391 23.2841 0 15.0001 0Z" fill="#1778F2"></path>
+</svg> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-24 col-grid-responsive gutter-images" id="col_1">
+                <div class="image-wrapper post-media-div f-post-232500263453549_1115218317296869 f-border-black-2" id="image_wrapper_232500263453549_1115218317296869" data-id="1">
+                    <img src="https://embedsocial.com/cdn/icon/ivideo.png" alt="Representation icon for a video post." class='video-img video-img-feed' />
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('1', '0', '232500263453549_1115218317296869', '131709395')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('1', '0', '232500263453549_1115218317296869', '131709395')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/23250/232500263453549_1115218317296869/image_0.jpeg" alt="Video post from Air Zermatt AG." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <img style="margin-top: -50px;" class="img-avatar img-avatar48 img-avatar-thumb" src="https://embedsocial.com/admin/source-cover-photo-link/232500263453549.jpeg" alt="User profile - Air Zermatt AG.">
+                        <div class="from-details">
+                            <a href="https://www.facebook.com/232500263453549" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">Air Zermatt AG</span></a> on <span class="f-media-date ">
+                    April 27, 2025                </span>
+                        </div>
+                        <div id="media_title_232500263453549_1115218317296869" onclick="showLightbox('1', '0', '232500263453549_1115218317296869', '131709395')" title='CEO-Talk👨‍💼
+Ziele, Visionen, Erwartungen - wie sich Daniel Aufdenblatten die Zukunft der Air Zermatt vorstellt.🎬#AirZermatt #CEOTalk '>
+                            CEO-Talk👨‍💼 Ziele, Visionen, Erwartungen - wie sich Daniel Aufdenblatten die Zukunft der Air Zermatt vorstellt.🎬#AirZermatt #CEOTalk </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook logo.">
+    <circle cx="15" cy="15" r="15" fill="white"></circle>
+    <path d="M15.0001 0C6.71586 0 0 6.74391 0 15.0628C0 22.5239 5.40783 28.7029 12.4984 29.8994V18.2053H8.87992V13.9971H12.4984V10.8941C12.4984 7.29375 14.6882 5.33177 17.8871 5.33177C19.4191 5.33177 20.7357 5.44641 21.1179 5.4969V9.26021L18.8993 9.26129C17.16 9.26129 16.8247 10.0911 16.8247 11.3092V13.9949H20.9748L20.4335 18.2032H16.8247V30C24.2463 29.093 30 22.7566 30 15.0584C30 6.74391 23.2841 0 15.0001 0Z" fill="#1778F2"></path>
+</svg> </div>
+                    </div>
+                </div>
+                <div class="image-wrapper post-media-div f-post-18049618277591288 f-border-black-2" id="image_wrapper_18049618277591288" data-id="4">
+                    <img src="https://embedsocial.com/cdn/icon/ivideo.png" alt="Representation icon for a video post." class='video-img video-img-feed' />
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('4', '0', '18049618277591288', '131303190')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('4', '0', '18049618277591288', '131303190')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/18049/18049618277591288/image_0.jpeg" alt="Video post from airzermatt." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <div class="from-details">
+                            <a href="https://instagram.com/airzermatt" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">airzermatt</span></a> on <span class="f-media-date ">
+                    April 20, 2025                </span>
+                        </div>
+                        <div id="media_title_18049618277591288" onclick="showLightbox('4', '0', '18049618277591288', '131303190')" title='CEO Talk👨‍💼
+Challenges, decisions, external factors - we give you an insight into Daniel Aufdenblatten&#039;s view of things.🎬#AirZermatt #CEOTalk'>
+                            CEO Talk👨‍💼 Challenges, decisions, external factors - we give you an insight into Daniel Aufdenblatten&#039;s view of things.🎬#AirZermatt #CEOTalk </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://instagram.com/airzermatt', 'instagram')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://instagram.com/airzermatt', 'instagram')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Instagram logo.">
+    <path d="M15.0049 0C8.74253 0 6.91103 0.00646208 6.55502 0.036003C5.26988 0.142858 4.47019 0.34526 3.59896 0.779143C2.92755 1.11263 2.39804 1.4992 1.87544 2.0411C0.923698 3.02933 0.346883 4.24513 0.138077 5.69033C0.0365572 6.39193 0.00702432 6.53502 0.00102545 10.1187C-0.00128181 11.3133 0.00102545 12.8854 0.00102545 14.9941C0.00102545 21.2531 0.00794722 23.0833 0.0379416 23.4387C0.141768 24.6896 0.337885 25.4765 0.753192 26.3374C1.54689 27.9852 3.06276 29.2222 4.84858 29.6838C5.46692 29.8431 6.14987 29.9308 7.02663 29.9723C7.3981 29.9885 11.1843 30 14.9728 30C18.7613 30 22.5499 29.9954 22.9121 29.9769C23.9273 29.9292 24.5168 29.85 25.1686 29.6815C26.966 29.2176 28.4541 27.9991 29.264 26.3282C29.6712 25.4881 29.8777 24.6711 29.9712 23.4855C29.9915 23.227 30 19.1058 30 14.9902C30 10.8738 29.9908 6.76026 29.9705 6.50178C29.8759 5.29706 29.6694 4.487 29.249 3.63077C28.9041 2.92986 28.521 2.40643 27.965 1.87124C26.9726 0.923155 25.759 0.346183 24.3128 0.13755C23.6121 0.0362338 23.4725 0.0062313 19.8871 0H15.0049Z" fill="url(#paint0_radial_instagram)"></path>
+    <path d="M15.0049 0C8.74253 0 6.91103 0.00646208 6.55502 0.036003C5.26988 0.142858 4.47019 0.34526 3.59896 0.779143C2.92755 1.11263 2.39804 1.4992 1.87544 2.0411C0.923698 3.02933 0.346883 4.24513 0.138077 5.69033C0.0365572 6.39193 0.00702432 6.53502 0.00102545 10.1187C-0.00128181 11.3133 0.00102545 12.8854 0.00102545 14.9941C0.00102545 21.2531 0.00794722 23.0833 0.0379416 23.4387C0.141768 24.6896 0.337885 25.4765 0.753192 26.3374C1.54689 27.9852 3.06276 29.2222 4.84858 29.6838C5.46692 29.8431 6.14987 29.9308 7.02663 29.9723C7.3981 29.9885 11.1843 30 14.9728 30C18.7613 30 22.5499 29.9954 22.9121 29.9769C23.9273 29.9292 24.5168 29.85 25.1686 29.6815C26.966 29.2176 28.4541 27.9991 29.264 26.3282C29.6712 25.4881 29.8777 24.6711 29.9712 23.4855C29.9915 23.227 30 19.1058 30 14.9902C30 10.8738 29.9908 6.76026 29.9705 6.50178C29.8759 5.29706 29.6694 4.487 29.249 3.63077C28.9041 2.92986 28.521 2.40643 27.965 1.87124C26.9726 0.923155 25.759 0.346183 24.3128 0.13755C23.6121 0.0362338 23.4725 0.0062313 19.8871 0H15.0049Z" fill="url(#paint1_radial_instagram)"></path>
+    <path d="M14.998 3.9234C11.9902 3.9234 11.6128 3.93656 10.4314 3.99033C9.25244 4.04433 8.44767 4.23104 7.74349 4.50499C7.01509 4.78794 6.39721 5.16643 5.78163 5.7824C5.16559 6.39815 4.7872 7.0162 4.50341 7.74457C4.22885 8.44917 4.04196 9.25439 3.98889 10.4333C3.93605 11.6149 3.92221 11.9927 3.92221 15.0013C3.92221 18.0098 3.93559 18.3862 3.98912 19.5679C4.04334 20.7472 4.23 21.5522 4.50364 22.2566C4.78674 22.9852 5.16513 23.6032 5.78094 24.219C6.39628 24.8352 7.01417 25.2146 7.74211 25.4975C8.44674 25.7715 9.25175 25.9582 10.4305 26.0122C11.6118 26.066 11.9891 26.0791 14.9966 26.0791C18.0046 26.0791 18.3809 26.066 19.5622 26.0122C20.7412 25.9582 21.5469 25.7715 22.2515 25.4975C22.9797 25.2146 23.5967 24.8352 24.212 24.219C24.828 23.6032 25.2064 22.9852 25.4902 22.2568C25.7625 21.5522 25.9494 20.747 26.0048 19.5681C26.0578 18.3865 26.0717 18.0098 26.0717 15.0013C26.0717 11.9927 26.0578 11.6151 26.0048 10.4335C25.9494 9.25416 25.7625 8.44917 25.4902 7.7448C25.2064 7.0162 24.828 6.39815 24.212 5.7824C23.596 5.1662 22.9799 4.7877 22.2508 4.50499C21.5448 4.23104 20.7396 4.04433 19.5606 3.99033C18.3793 3.93656 18.0032 3.9234 14.9945 3.9234H14.998ZM14.0045 5.91972C14.2993 5.91926 14.6284 5.91972 14.998 5.91972C17.955 5.91972 18.3054 5.93034 19.4731 5.98342C20.5529 6.03281 21.139 6.21329 21.5294 6.36492C22.0462 6.5657 22.4147 6.80572 22.802 7.19345C23.1897 7.58117 23.4296 7.95043 23.6308 8.4674C23.7824 8.85743 23.9631 9.44364 24.0122 10.5237C24.0653 11.6915 24.0768 12.0423 24.0768 14.9987C24.0768 17.9551 24.0653 18.3059 24.0122 19.4737C23.9628 20.5538 23.7824 21.14 23.6308 21.53C23.4301 22.047 23.1897 22.4151 22.802 22.8026C22.4144 23.1903 22.0464 23.4304 21.5294 23.6311C21.1394 23.7835 20.5529 23.9635 19.4731 24.0129C18.3057 24.066 17.955 24.0775 14.998 24.0775C12.0408 24.0775 11.6903 24.066 10.5228 24.0129C9.44302 23.963 8.85697 23.7825 8.46636 23.6309C7.94953 23.4301 7.58037 23.1901 7.19275 22.8024C6.80513 22.4147 6.56518 22.0463 6.36398 21.5291C6.2124 21.1391 6.03174 20.5529 5.98259 19.4728C5.92953 18.305 5.91891 17.9542 5.91891 14.996C5.91891 12.0377 5.92953 11.6888 5.98259 10.521C6.03197 9.44087 6.2124 8.85466 6.36398 8.46417C6.56471 7.9472 6.80513 7.57794 7.19275 7.19022C7.58037 6.80249 7.94953 6.56247 8.46636 6.36122C8.85674 6.2089 9.44302 6.02889 10.5228 5.97927C11.5445 5.93311 11.9404 5.91926 14.0045 5.91695V5.91972ZM20.9096 7.75911C20.1759 7.75911 19.5806 8.35385 19.5806 9.08799C19.5806 9.8219 20.1759 10.4173 20.9096 10.4173C21.6433 10.4173 22.2386 9.8219 22.2386 9.08799C22.2386 8.35408 21.6433 7.75865 20.9096 7.75865V7.75911ZM14.998 9.31232C11.8571 9.31232 9.31058 11.8595 9.31058 15.0013C9.31058 18.143 11.8571 20.6891 14.998 20.6891C18.1388 20.6891 20.6844 18.143 20.6844 15.0013C20.6844 11.8595 18.1386 9.31232 14.9977 9.31232H14.998ZM14.998 11.3086C17.0367 11.3086 18.6896 12.9618 18.6896 15.0013C18.6896 17.0405 17.0367 18.6939 14.998 18.6939C12.959 18.6939 11.3064 17.0405 11.3064 15.0013C11.3064 12.9618 12.959 11.3086 14.998 11.3086V11.3086Z" fill="white"></path>
+    <defs>
+        <radialGradient id="paint0_radial_instagram" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.96879 32.3106) rotate(-90) scale(29.7322 27.6533)">
+            <stop stop-color="#FFDD55"></stop>
+            <stop offset="0.1" stop-color="#FFDD55"></stop>
+            <stop offset="0.5" stop-color="#FF543E"></stop>
+            <stop offset="1" stop-color="#C837AB"></stop>
+        </radialGradient>
+        <radialGradient id="paint1_radial_instagram" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-5.02516 2.16115) rotate(78.6806) scale(13.2904 54.7837)">
+            <stop stop-color="#3771C8"></stop>
+            <stop offset="0.128" stop-color="#3771C8"></stop>
+            <stop offset="1" stop-color="#6600FF" stop-opacity="0"></stop>
+        </radialGradient>
+    </defs>
+</svg> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-24 col-grid-responsive gutter-images" id="col_2">
+                <div class="image-wrapper post-media-div f-post-232500263453549_1111684910983543 f-border-black-2" id="image_wrapper_232500263453549_1111684910983543" data-id="2">
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('2', '0', '232500263453549_1111684910983543', '131367473')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('2', '0', '232500263453549_1111684910983543', '131367473')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/23250/232500263453549_1111684910983543/image_0.jpeg" alt="Photo post from Air Zermatt AG." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <img style="margin-top: -50px;" class="img-avatar img-avatar48 img-avatar-thumb" src="https://embedsocial.com/admin/source-cover-photo-link/232500263453549.jpeg" alt="User profile - Air Zermatt AG.">
+                        <div class="from-details">
+                            <a href="https://www.facebook.com/232500263453549" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">Air Zermatt AG</span></a> on <span class="f-media-date ">
+                    April 23, 2025                </span>
+                        </div>
+                        <div id="media_title_232500263453549_1111684910983543" onclick="showLightbox('2', '0', '232500263453549_1111684910983543', '131367473')" title='MEDIENMITTEILUNG📰
+Am Dienstagmittag ging am Furgghorn oberhalb von Zermatt eine grosse Lawine nieder. Das Ausmass der Lawine war selbst für uns beachtlich. Die Air Zermatt flog sofort 20 Rettungsspezialisten und Lawinenhundeführer zum Einsatzort. Glück im Unglück: Es wurden weder Menschen verletzt noch kamen Personen zu Schaden.❄️
+
+#AirZermatt #Lawine #Medienmitteilung '>
+                            MEDIENMITTEILUNG📰 Am Dienstagmittag ging am Furgghorn oberhalb von Zermatt eine grosse Lawine nieder. Das Ausmass der Lawine war selbst für uns beachtlich. Die Air Zermatt flog sofort 20 Rettungsspezi... </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook logo.">
+    <circle cx="15" cy="15" r="15" fill="white"></circle>
+    <path d="M15.0001 0C6.71586 0 0 6.74391 0 15.0628C0 22.5239 5.40783 28.7029 12.4984 29.8994V18.2053H8.87992V13.9971H12.4984V10.8941C12.4984 7.29375 14.6882 5.33177 17.8871 5.33177C19.4191 5.33177 20.7357 5.44641 21.1179 5.4969V9.26021L18.8993 9.26129C17.16 9.26129 16.8247 10.0911 16.8247 11.3092V13.9949H20.9748L20.4335 18.2032H16.8247V30C24.2463 29.093 30 22.7566 30 15.0584C30 6.74391 23.2841 0 15.0001 0Z" fill="#1778F2"></path>
+</svg> </div>
+                    </div>
+                </div>
+                <div class="image-wrapper post-media-div f-post-232500263453549_1109736281178406 f-border-black-2" id="image_wrapper_232500263453549_1109736281178406" data-id="5">
+                    <img src="https://embedsocial.com/cdn/icon/ivideo.png" alt="Representation icon for a video post." class='video-img video-img-feed' />
+                    <a class="link-img link-img-feed f-border-black-2" onclick="showLightbox('5', '0', '232500263453549_1109736281178406', '131305030')" aria-label="Open post in lightbox." onkeydown="return event.keyCode != 13 || showLightbox('5', '0', '232500263453549_1109736281178406', '131305030')"
+                        tabindex="0">
+                                <img class="image-feed" src="https://embedsocial.com/admin/mediacache/feed-media/23250/232500263453549_1109736281178406/image_0.jpeg" alt="Video post from Air Zermatt AG." />
+                                                </a>
+                    <div class="col-xs-24 photo-title-feed">
+                        <img style="margin-top: -50px;" class="img-avatar img-avatar48 img-avatar-thumb" src="https://embedsocial.com/admin/source-cover-photo-link/232500263453549.jpeg" alt="User profile - Air Zermatt AG.">
+                        <div class="from-details">
+                            <a href="https://www.facebook.com/232500263453549" target="_blank" class="f-border-black-2" tabindex="0" aria-label="Open user profile in new tab."><span class="username">Air Zermatt AG</span></a> on <span class="f-media-date ">
+                    April 20, 2025                </span>
+                        </div>
+                        <div id="media_title_232500263453549_1109736281178406" onclick="showLightbox('5', '0', '232500263453549_1109736281178406', '131305030')" title='CEO-Talk👨‍💼
+Herausforderungen, Entscheidungen, externe Faktoren - wir geben euch einen Einblick in Daniel Aufdenblatten&#039;s Sichtweise der Dinge.🎬#AirZermatt #CEOTalk '>
+                            CEO-Talk👨‍💼 Herausforderungen, Entscheidungen, externe Faktoren - wir geben euch einen Einblick in Daniel Aufdenblatten's Sichtweise der Dinge.🎬#AirZermatt #CEOTalk </div>
+                        <div class="source-logo f-border-black-2" onclick="openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" onkeydown="return event.keyCode != 13 || openSourceLink(event, 'https://www.facebook.com/232500263453549', 'facebook')" aria-label="Open source link in new tab."
+                            tabindex="0">
+
+
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook logo.">
+    <circle cx="15" cy="15" r="15" fill="white"></circle>
+    <path d="M15.0001 0C6.71586 0 0 6.74391 0 15.0628C0 22.5239 5.40783 28.7029 12.4984 29.8994V18.2053H8.87992V13.9971H12.4984V10.8941C12.4984 7.29375 14.6882 5.33177 17.8871 5.33177C19.4191 5.33177 20.7357 5.44641 21.1179 5.4969V9.26021L18.8993 9.26129C17.16 9.26129 16.8247 10.0911 16.8247 11.3092V13.9949H20.9748L20.4335 18.2032H16.8247V30C24.2463 29.093 30 22.7566 30 15.0584C30 6.74391 23.2841 0 15.0001 0Z" fill="#1778F2"></path>
+</svg> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-page-num" style="display:none">
+                6</div>
+        </div>
+
+        <div class="row">
+            <div id="load-more-div" class="col-xs-24">
+                <ul class="espagination">
+                    <li class="active" id="li-load-more"><a id="load-more-pages-btn" style="cursor:pointer; padding: 8px 12px 7px 12px" onclick="loadMore()">Load More</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-24" id="loading-more-div">
+                <img src="https://embedsocial.com/image/loader.gif" />
+            </div>
+        </div>
+
+        <script>
+            var oldWidgetsData = {
+                enableAnalytics: false,
+                imageFixedWidth: false,
+                imagePaddingIsDefined: true,
+                imagePadding: 10,
+                slideshowAutomaticTransition: true,
+                slideshowAutoPlayInterval: 1500,
+                carouselFullWidth: false,
+                slideshowShowNavigationControls: true,
+                album: [{
+                    "name": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc\nGoals, visions, expectations - how Daniel Aufdenblatten imagines the future of Air Zermatt.\ud83c\udfac#AirZermatt #CEOTalk",
+                    "formatedName": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc\nGoals, visions, expectations - how Daniel Aufdenblatten imagines the future of Air Zermatt.\ud83c\udfac<a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/airzermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/ceotalk'>#CEOTalk<\/a>",
+                    "formatedNameLines": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc<br>Goals, visions, expectations - how Daniel Aufdenblatten imagines the future of Air Zermatt.\ud83c\udfac<a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/airzermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/ceotalk'>#CEOTalk<\/a>",
+                    "id": "17931764934041021",
+                    "mediaId": "17931764934041021",
+                    "type": "video",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "airzermatt",
+                    "username": "airzermatt",
+                    "userProfilePhotoUrl": null,
+                    "createdOn": "April 27, 2025",
+                    "mediaCreatedOn": "April 27, 2025",
+                    "createdOnForApi": "2025-04-27 17:01:39",
+                    "sourceId": 5573,
+                    "sourceType": "instagram",
+                    "sourceSubtype": "account",
+                    "sourceName": "@airzermatt",
+                    "sourceIsVerified": "No",
+                    "call_to_action": false,
+                    "likes": "292",
+                    "totalLikes": 292,
+                    "totalComments": 2,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/story-cdn\/17841403395600649\/source_cover_photo.jpg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-27-2025 17:01:39",
+                    "sId": "17841403395600649",
+                    "tags": ["#airzermatt", "#ceotalk"],
+                    "autoincId": 131710294,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.instagram.com\/reel\/DI9SfRtMai7\/",
+                    "title": "airzermatt",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/instagram.com\/airzermatt",
+                    "timestamp": 1745780609,
+                    "image": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": {
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/17931\/17931764934041021\/video.mp4",
+                        "id": "17931764934041021",
+                        "width": 720,
+                        "height": 1280,
+                        "type": "video",
+                        "duration": null,
+                        "embeddable": true,
+                        "altText": null
+                    },
+                    "follow": "https:\/\/instagram.com\/airzermatt",
+                    "status": 1,
+                    "pinned": 0
+                }, {
+                    "name": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc\nZiele, Visionen, Erwartungen - wie sich Daniel Aufdenblatten die Zukunft der Air Zermatt vorstellt.\ud83c\udfac#AirZermatt #CEOTalk ",
+                    "formatedName": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc\nZiele, Visionen, Erwartungen - wie sich Daniel Aufdenblatten die Zukunft der Air Zermatt vorstellt.\ud83c\udfac<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/CEOTalk'>#CEOTalk<\/a> ",
+                    "formatedNameLines": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc<br>Ziele, Visionen, Erwartungen - wie sich Daniel Aufdenblatten die Zukunft der Air Zermatt vorstellt.\ud83c\udfac<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/CEOTalk'>#CEOTalk<\/a> ",
+                    "id": "232500263453549_1115218317296869",
+                    "mediaId": "232500263453549_1115218317296869",
+                    "type": "video",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "Air Zermatt AG",
+                    "username": "Air Zermatt AG",
+                    "userProfilePhotoUrl": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "createdOn": "April 27, 2025",
+                    "mediaCreatedOn": "April 27, 2025",
+                    "createdOnForApi": "2025-04-27 17:01:11",
+                    "sourceId": 5572,
+                    "sourceType": "facebook",
+                    "sourceSubtype": "page-posts",
+                    "sourceName": "Air Zermatt AG",
+                    "sourceIsVerified": "Yes",
+                    "call_to_action": false,
+                    "likes": "0",
+                    "totalLikes": 0,
+                    "totalComments": 0,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-27-2025 17:01:11",
+                    "sId": "232500263453549",
+                    "tags": ["#airzermatt", "#ceotalk"],
+                    "autoincId": 131709395,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.facebook.com\/232500263453549_1115218317296869",
+                    "title": "Air Zermatt AG",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/www.facebook.com\/232500263453549",
+                    "timestamp": 1745779375,
+                    "image": {
+                        "width": 405,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1115218317296869\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": {
+                        "source": "https:\/\/www.facebook.com\/plugins\/video.php?href=https:\/\/www.facebook.com\/reel\/9605204739555350\/",
+                        "id": "9605204739555350",
+                        "width": 720,
+                        "height": 1280,
+                        "type": "video_ns",
+                        "duration": null,
+                        "embeddable": true,
+                        "altText": null
+                    },
+                    "follow": "https:\/\/www.facebook.com\/232500263453549",
+                    "status": 1,
+                    "pinned": 0
+                }, {
+                    "name": "MEDIENMITTEILUNG\ud83d\udcf0\nAm Dienstagmittag ging am Furgghorn oberhalb von Zermatt eine grosse Lawine nieder. Das Ausmass der Lawine war selbst f\u00fcr uns beachtlich. Die Air Zermatt flog sofort 20 Rettungsspezialisten und Lawinenhundef\u00fchrer zum Einsatzort. Gl\u00fcck im Ungl\u00fcck: Es wurden weder Menschen verletzt noch kamen Personen zu Schaden.\u2744\ufe0f\n\n#AirZermatt #Lawine #Medienmitteilung ",
+                    "formatedName": "MEDIENMITTEILUNG\ud83d\udcf0\nAm Dienstagmittag ging am Furgghorn oberhalb von Zermatt eine grosse Lawine nieder. Das Ausmass der Lawine war selbst f\u00fcr uns beachtlich. Die Air Zermatt flog sofort 20 Rettungsspezialisten und Lawinenhundef\u00fchrer zum Einsatzort. Gl\u00fcck im Ungl\u00fcck: Es wurden weder Menschen verletzt noch kamen Personen zu Schaden.\u2744\ufe0f\n\n<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Lawine'>#Lawine<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Medienmitteilung'>#Medienmitteilung<\/a> ",
+                    "formatedNameLines": "MEDIENMITTEILUNG\ud83d\udcf0<br>Am Dienstagmittag ging am Furgghorn oberhalb von Zermatt eine grosse Lawine nieder. Das Ausmass der Lawine war selbst f\u00fcr uns beachtlich. Die Air Zermatt flog sofort 20 Rettungsspezialisten und Lawinenhundef\u00fchrer zum Einsatzort. Gl\u00fcck im Ungl\u00fcck: Es wurden weder Menschen verletzt noch kamen Personen zu Schaden.\u2744\ufe0f<br><br><a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Lawine'>#Lawine<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Medienmitteilung'>#Medienmitteilung<\/a> ",
+                    "id": "232500263453549_1111684910983543",
+                    "mediaId": "232500263453549_1111684910983543",
+                    "type": "image",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "Air Zermatt AG",
+                    "username": "Air Zermatt AG",
+                    "userProfilePhotoUrl": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "createdOn": "April 23, 2025",
+                    "mediaCreatedOn": "April 23, 2025",
+                    "createdOnForApi": "2025-04-23 06:28:55",
+                    "sourceId": 5572,
+                    "sourceType": "facebook",
+                    "sourceSubtype": "page-posts",
+                    "sourceName": "Air Zermatt AG",
+                    "sourceIsVerified": "Yes",
+                    "call_to_action": false,
+                    "likes": "0",
+                    "totalLikes": 0,
+                    "totalComments": 0,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-23-2025 06:28:55",
+                    "sId": "232500263453549",
+                    "tags": ["#airzermatt", "#lawine", "#medienmitteilung"],
+                    "autoincId": 131367473,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.facebook.com\/232500263453549_1111684910983543",
+                    "title": "Air Zermatt AG",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/www.facebook.com\/232500263453549",
+                    "timestamp": 1745402277,
+                    "image": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1111684910983543\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": [],
+                    "follow": "https:\/\/www.facebook.com\/232500263453549",
+                    "status": 1,
+                    "pinned": 0
+                }, {
+                    "name": "ALPHA ZULU BLOG\ud83d\udca5\nBesonders in Schutzw\u00e4ldern, die vor Lawinen und Steinschl\u00e4gen sch\u00fctzen, ist ein regelm\u00e4ssiger Holzeinschlag notwendig, um ihre Schutzfunktion zu erhalten. Wie das sogenannte Logging mit der Air Zermatt abl\u00e4uft, erf\u00e4hrst du in unserem neusten Blogbeitrag\ud83d\udc47\n\n#AirZermatt #Logging #Fr\u00fchjahrsputz ",
+                    "formatedName": "ALPHA ZULU BLOG\ud83d\udca5\nBesonders in Schutzw\u00e4ldern, die vor Lawinen und Steinschl\u00e4gen sch\u00fctzen, ist ein regelm\u00e4ssiger Holzeinschlag notwendig, um ihre Schutzfunktion zu erhalten. Wie das sogenannte Logging mit der Air Zermatt abl\u00e4uft, erf\u00e4hrst du in unserem neusten Blogbeitrag\ud83d\udc47\n\n<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Logging'>#Logging<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Fr\u00fchjahrsputz'>#Fr\u00fchjahrsputz<\/a> ",
+                    "formatedNameLines": "ALPHA ZULU BLOG\ud83d\udca5<br>Besonders in Schutzw\u00e4ldern, die vor Lawinen und Steinschl\u00e4gen sch\u00fctzen, ist ein regelm\u00e4ssiger Holzeinschlag notwendig, um ihre Schutzfunktion zu erhalten. Wie das sogenannte Logging mit der Air Zermatt abl\u00e4uft, erf\u00e4hrst du in unserem neusten Blogbeitrag\ud83d\udc47<br><br><a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Logging'>#Logging<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/Fr\u00fchjahrsputz'>#Fr\u00fchjahrsputz<\/a> ",
+                    "id": "232500263453549_1110979667720734",
+                    "mediaId": "232500263453549_1110979667720734",
+                    "type": "image",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "Air Zermatt AG",
+                    "username": "Air Zermatt AG",
+                    "userProfilePhotoUrl": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "createdOn": "April 22, 2025",
+                    "mediaCreatedOn": "April 22, 2025",
+                    "createdOnForApi": "2025-04-22 08:28:10",
+                    "sourceId": 5572,
+                    "sourceType": "facebook",
+                    "sourceSubtype": "page-posts",
+                    "sourceName": "Air Zermatt AG",
+                    "sourceIsVerified": "Yes",
+                    "call_to_action": false,
+                    "likes": "0",
+                    "totalLikes": 0,
+                    "totalComments": 0,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-22-2025 08:28:10",
+                    "sId": "232500263453549",
+                    "tags": ["#airzermatt", "#logging", "#fr\u00fchjahrsputz"],
+                    "autoincId": 131305029,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.facebook.com\/232500263453549_1110979667720734",
+                    "title": "Air Zermatt AG",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/www.facebook.com\/232500263453549",
+                    "timestamp": 1745316087,
+                    "image": {
+                        "width": 274,
+                        "height": 274,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1110979667720734\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": [],
+                    "follow": "https:\/\/www.facebook.com\/232500263453549",
+                    "status": 1,
+                    "pinned": 0
+                }, {
+                    "name": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc\nChallenges, decisions, external factors - we give you an insight into Daniel Aufdenblatten's view of things.\ud83c\udfac#AirZermatt #CEOTalk",
+                    "formatedName": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc\nChallenges, decisions, external factors - we give you an insight into Daniel Aufdenblatten's view of things.\ud83c\udfac<a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/airzermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/ceotalk'>#CEOTalk<\/a>",
+                    "formatedNameLines": "CEO Talk\ud83d\udc68\u200d\ud83d\udcbc<br>Challenges, decisions, external factors - we give you an insight into Daniel Aufdenblatten's view of things.\ud83c\udfac<a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/airzermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.instagram.com\/explore\/tags\/ceotalk'>#CEOTalk<\/a>",
+                    "id": "18049618277591288",
+                    "mediaId": "18049618277591288",
+                    "type": "video",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "airzermatt",
+                    "username": "airzermatt",
+                    "userProfilePhotoUrl": null,
+                    "createdOn": "April 20, 2025",
+                    "mediaCreatedOn": "April 20, 2025",
+                    "createdOnForApi": "2025-04-20 17:01:11",
+                    "sourceId": 5573,
+                    "sourceType": "instagram",
+                    "sourceSubtype": "account",
+                    "sourceName": "@airzermatt",
+                    "sourceIsVerified": "No",
+                    "call_to_action": false,
+                    "likes": "587",
+                    "totalLikes": 587,
+                    "totalComments": 4,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/story-cdn\/17841403395600649\/source_cover_photo.jpg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-20-2025 17:01:11",
+                    "sId": "17841403395600649",
+                    "tags": ["#airzermatt", "#ceotalk"],
+                    "autoincId": 131303190,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.instagram.com\/reel\/DIrQ4olpnBz\/",
+                    "title": "airzermatt",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/instagram.com\/airzermatt",
+                    "timestamp": 1745315008,
+                    "image": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 1080,
+                        "height": 1080,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": {
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/18049\/18049618277591288\/video.mp4",
+                        "id": "18049618277591288",
+                        "width": 720,
+                        "height": 1280,
+                        "type": "video",
+                        "duration": null,
+                        "embeddable": true,
+                        "altText": null
+                    },
+                    "follow": "https:\/\/instagram.com\/airzermatt",
+                    "status": 1,
+                    "pinned": 0
+                }, {
+                    "name": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc\nHerausforderungen, Entscheidungen, externe Faktoren - wir geben euch einen Einblick in Daniel Aufdenblatten's Sichtweise der Dinge.\ud83c\udfac#AirZermatt #CEOTalk ",
+                    "formatedName": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc\nHerausforderungen, Entscheidungen, externe Faktoren - wir geben euch einen Einblick in Daniel Aufdenblatten's Sichtweise der Dinge.\ud83c\udfac<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/CEOTalk'>#CEOTalk<\/a> ",
+                    "formatedNameLines": "CEO-Talk\ud83d\udc68\u200d\ud83d\udcbc<br>Herausforderungen, Entscheidungen, externe Faktoren - wir geben euch einen Einblick in Daniel Aufdenblatten's Sichtweise der Dinge.\ud83c\udfac<a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/AirZermatt'>#AirZermatt<\/a> <a target='_blank' href='https:\/\/www.facebook.com\/hashtag\/CEOTalk'>#CEOTalk<\/a> ",
+                    "id": "232500263453549_1109736281178406",
+                    "mediaId": "232500263453549_1109736281178406",
+                    "type": "video",
+                    "postType": "recent",
+                    "postShared": false,
+                    "userUsername": "Air Zermatt AG",
+                    "username": "Air Zermatt AG",
+                    "userProfilePhotoUrl": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "createdOn": "April 20, 2025",
+                    "mediaCreatedOn": "April 20, 2025",
+                    "createdOnForApi": "2025-04-20 17:00:50",
+                    "sourceId": 5572,
+                    "sourceType": "facebook",
+                    "sourceSubtype": "page-posts",
+                    "sourceName": "Air Zermatt AG",
+                    "sourceIsVerified": "Yes",
+                    "call_to_action": false,
+                    "likes": "0",
+                    "totalLikes": 0,
+                    "totalComments": 0,
+                    "sourceLogo": "https:\/\/embedsocial.com\/admin\/source-cover-photo-link\/232500263453549.jpeg",
+                    "itemType": "post",
+                    "globalModerationStatus": true,
+                    "datepickerMediaCreatedOn": "04-20-2025 17:00:50",
+                    "sId": "232500263453549",
+                    "tags": ["#airzermatt", "#ceotalk"],
+                    "autoincId": 131305030,
+                    "priority": 0,
+                    "clicks": 0,
+                    "score": 0,
+                    "link": "https:\/\/www.facebook.com\/232500263453549_1109736281178406",
+                    "title": "Air Zermatt AG",
+                    "aiTitle": null,
+                    "userUrl": "https:\/\/www.facebook.com\/232500263453549",
+                    "timestamp": 1745316088,
+                    "image": {
+                        "width": 405,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "largeImage": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "large_image": {
+                        "width": 720,
+                        "height": 720,
+                        "source": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0_large.jpeg",
+                        "source_webp": "https:\/\/embedsocial.com\/admin\/mediacache\/feed-media\/23250\/232500263453549_1109736281178406\/image_0_large.webp",
+                        "type": "image",
+                        "altText": null
+                    },
+                    "carousel": [],
+                    "video": {
+                        "source": "https:\/\/www.facebook.com\/plugins\/video.php?href=https:\/\/www.facebook.com\/reel\/665721579511167\/",
+                        "id": "665721579511167",
+                        "width": 720,
+                        "height": 1280,
+                        "type": "video_ns",
+                        "duration": null,
+                        "embeddable": true,
+                        "altText": null
+                    },
+                    "follow": "https:\/\/www.facebook.com\/232500263453549",
+                    "status": 1,
+                    "pinned": 0
+                }],
+                slideshowNumThumbs: 10,
+                slideshowNumThumbsIsEnabled: 2,
+                slideshowNumThumbsIsDefined: true,
+                layout: 'feed',
+                albumRef: '6dea7bc7f3a88b04d90ff39b9b751c55394491f3',
+                hashtagLightboxViewURL: 'https://embedsocial.com/api/feed_widget_lightbox/',
+                baseURL: 'https://embedsocial.com/admin',
+                imageWidth: '210px',
+                hashtagAlbumLoadMoreURL: 'https://embedsocial.com/api/pro_hashtag_photos'
+            }
+
+            var oldScripts = true;
+            window.iFrameResizer = {
+                messageCallback: function(message) {
+                    if (message.hasOwnProperty("hasOpenLinkInNewTab") && message.hasOpenLinkInNewTab == true) {
+                        oldScripts = false
+                    }
+                }
+            };
+
+            function showLightbox(index, page, mediaId, id) {
+                var lightboxBase = oldWidgetsData.hashtagLightboxViewURL.substr(-1) === "/" ? oldWidgetsData.hashtagLightboxViewURL : oldWidgetsData.hashtagLightboxViewURL + "/";
+                var src = lightboxBase + oldWidgetsData.albumRef + "/" + index + "/" + page + "/" + id;
+                var msgData = {
+                    albumRef: oldWidgetsData.albumRef,
+                    index: index,
+                    page: page,
+                    src: src,
+                    action: "create"
+                };
+                if ("parentIFrame" in window) {
+                    parentIFrame.sendMessage(msgData)
+                } else {
+                    setTimeout(function() {
+                        parentIFrame.sendMessage(msgData)
+                    }, 500)
+                }
+                if (oldWidgetsData.enableAnalytics) {
+                    sendEvent("click_lightbox", 1, mediaId)
+                }
+            }
+
+            function openSourceLink(event, link, sourceType) {
+                event.preventDefault();
+                event.stopPropagation();
+                if (!link.trim()) {
+                    return false
+                }
+                if ("parentIFrame" in window && oldScripts === false && sourceType === "facebook") {
+                    parentIFrame.sendMessage({
+                        openLinkInNewTab: true,
+                        link: link
+                    })
+                } else {
+                    window.open(link)
+                }
+            }
+
+            function callToAction(event, link) {
+                event.preventDefault();
+                event.stopPropagation();
+                if (!link.trim()) {
+                    return false
+                }
+                if (!(link.substring(0, 7) === "mailto:") && link.indexOf("://") === -1) {
+                    link = "http://" + link
+                }
+                window.open(link)
+            }
+            if (oldWidgetsData.enableAnalytics) {
+                var sessionId = Math.random().toString(36).substring(2, 12);
+
+                function sendEvent(eventType, eventVal, mediaId) {
+                    var data = {
+                        widgetRef: oldWidgetsData.albumRef,
+                        eventType: eventType,
+                        eventVal: eventVal,
+                        sessionId: sessionId,
+                        mediaId: mediaId
+                    };
+                    var query = [];
+                    for (var key in data) {
+                        query.push(encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+                    }
+                    sendRequest(oldWidgetsData.baseURL + "/feed_event", query.join("&"))
+                }
+
+                function sendRequest(url, postData, callback) {
+                    var req = createXMLHTTPObject();
+                    if (!req) {
+                        return
+                    }
+                    var method = postData ? "POST" : "GET";
+                    req.open(method, url, true);
+                    if (postData) {
+                        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+                    }
+                    req.onreadystatechange = function() {
+                        if (req.readyState != 4) return;
+                        if (req.status != 200 && req.status != 304) {
+                            return
+                        }
+                        if (typeof callback === "function") {
+                            callback(req.responseText)
+                        }
+                    };
+                    if (req.readyState == 4) {
+                        return
+                    }
+                    req.send(postData)
+                }
+
+                function createXMLHTTPObject() {
+                    var XMLHttpFactories = [function() {
+                        return new XMLHttpRequest
+                    }, function() {
+                        return new ActiveXObject("Msxml2.XMLHTTP")
+                    }, function() {
+                        return new ActiveXObject("Msxml3.XMLHTTP")
+                    }, function() {
+                        return new ActiveXObject("Microsoft.XMLHTTP")
+                    }];
+                    var xmlhttp = false;
+                    for (var i = 0; i < XMLHttpFactories.length; i++) {
+                        try {
+                            xmlhttp = XMLHttpFactories[i]()
+                        } catch (e) {
+                            continue
+                        }
+                        break
+                    }
+                    return xmlhttp
+                }
+            }
+            document.addEventListener("keydown", function(e) {
+                var e = window.event ? window.event : e;
+                var keys = [37, 39, 27];
+                if (keys.indexOf(e.keyCode) > -1) {
+                    if ("parentIFrame" in window) {
+                        parentIFrame.sendMessage({
+                            navigationCode: e.keyCode
+                        })
+                    }
+                }
+            });
+
+            function loadMore() {
+                document.getElementById("load-more-div").style.display = "none";
+                document.getElementById("loading-more-div").style.display = "block";
+                var parentDiv = document.getElementsByClassName("images-layout")[0];
+                var http = new XMLHttpRequest;
+                var url = oldWidgetsData.hashtagAlbumLoadMoreURL;
+                var albumRef = oldWidgetsData.albumRef;
+                var nextNumDivs = document.getElementsByClassName("next-page-num");
+                var num = nextNumDivs[nextNumDivs.length - 1].innerHTML.trim();
+                var params = "albumRef=" + albumRef + "&num=" + num;
+                http.open("POST", url, true);
+                http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                http.onreadystatechange = function() {
+                    if (http.readyState == 4 && http.status == 200) {
+                        if (["feed", "feed_3"].indexOf(oldWidgetsData.layout) === -1) {
+                            parentDiv.insertAdjacentHTML("beforeend", http.responseText);
+                            if (["masonry", "masonry_2"].indexOf(oldWidgetsData.layout) !== -1) {
+                                initMasonry()
+                            }
+                        } else {
+                            var div = document.createElement("div");
+                            div.setAttribute("id", "new-feed-media");
+                            div.innerHTML = http.responseText;
+                            parentDiv.appendChild(div);
+                            initOrderPost(div)
+                        }
+                        var nextNumDivs = document.getElementsByClassName("next-page-num");
+                        if (!nextNumDivs[nextNumDivs.length - 1].innerHTML.trim().length) {
+                            var loadMoreBtn = document.getElementById("load-more-pages-btn");
+                            document.getElementById("li-load-more").removeAttribute("class");
+                            loadMoreBtn.style.display = "none"
+                        }
+                        document.getElementById("loading-more-div").style.display = "none";
+                        document.getElementById("load-more-div").style.display = "block"
+                    }
+                };
+                http.send(params)
+            }
+
+            function mobileReorderPosts(parentElement) {
+                var bodyElem = document.getElementsByTagName("body")[0];
+                var div = document.createElement("div");
+                div.setAttribute("id", "new-feed-media");
+                var posts = Array.prototype.slice.call(document.getElementsByClassName("post-media-div"));
+                posts.sort(function(postA, postB) {
+                    var numIdA = postA.getAttribute("data-id");
+                    var numIdB = postB.getAttribute("data-id");
+                    return numIdA - numIdB
+                }).forEach(function(ele) {
+                    div.appendChild(ele)
+                });
+                bodyElem.appendChild(div);
+                var divNextPage = document.createElement("div");
+                divNextPage.setAttribute("id", "new-next-page-num");
+                divNextPage.appendChild(document.getElementsByClassName("next-page-num")[0]);
+                bodyElem.appendChild(divNextPage);
+                parentElement.innerHTML = document.getElementById("new-feed-media").innerHTML;
+                bodyElem.removeChild(div);
+                parentElement.appendChild(document.getElementById("new-next-page-num").firstChild);
+                bodyElem.removeChild(divNextPage)
+            }
+
+            function desktopReorderPosts(parentElement) {
+                var posts = Array.prototype.slice.call(document.getElementsByClassName("post-media-div"));
+                var columns = [];
+                for (var i = 0; i < posts.length; i++) {
+                    var index = i % 3;
+                    if ("object" != typeof columns[index]) {
+                        columns[index] = []
+                    }
+                    columns[index].push(posts[i])
+                }
+                var nextNumDiv = document.getElementsByClassName("next-page-num")[0];
+                for (var i = 0; i < 3; i++) {
+                    var columnDiv = document.createElement("div");
+                    columnDiv.setAttribute("class", "col-sm-8 col-xs-24 col-grid-responsive gutter-images");
+                    columnDiv.setAttribute("id", "col_" + i);
+                    parentElement.appendChild(columnDiv)
+                }
+                parentElement.appendChild(nextNumDiv);
+                for (var j = 0; j < columns[0].length; j++) {
+                    for (var i = 0; i < columns.length; i++) {
+                        if (j < columns[i].length) {
+                            document.getElementById("col_" + i).appendChild(columns[i][j])
+                        }
+                    }
+                }
+            }
+
+            function reorderPost() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var parentElement = document.getElementsByClassName("images-layout")[0];
+                if (parentElement) {
+                    if (parentElement.getAttribute("data-viewport") == "desktop" && viewportWidth <= 768) {
+                        mobileReorderPosts(parentElement);
+                        parentElement.setAttribute("data-viewport", "mobile")
+                    }
+                    if (parentElement.getAttribute("data-viewport") == "mobile" && viewportWidth > 768) {
+                        desktopReorderPosts(parentElement);
+                        parentElement.setAttribute("data-viewport", "desktop")
+                    }
+                }
+            }
+            reorderPost();
+            window.addEventListener("resize", reorderPost);
+
+            function initOrderPost(postsDiv) {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var parentElement = document.getElementsByClassName("images-layout")[0];
+                if (!parentElement) {
+                    return false
+                }
+                var posts = Array.prototype.slice.call(postsDiv.getElementsByClassName("post-media-div"));
+                if (!posts.length) {
+                    return false
+                }
+                if (viewportWidth <= 768) {
+                    posts.sort(function(postA, postB) {
+                        var numIdA = postA.getAttribute("data-id");
+                        var numIdB = postB.getAttribute("data-id");
+                        return numIdA - numIdB
+                    }).forEach(function(ele) {
+                        parentElement.appendChild(ele)
+                    })
+                } else {
+                    var index = 0;
+                    for (var i = 3; i > 0; i--) {
+                        var maxPosts = Math.ceil(posts.length / i);
+                        var column = posts.slice(0, maxPosts);
+                        for (j = 0; j < column.length; j++) {
+                            document.getElementById("col_" + index).appendChild(column[j])
+                        }
+                        index++;
+                        posts = posts.slice(maxPosts)
+                    }
+                }
+                var nextPostNum = postsDiv.getElementsByClassName("next-page-num");
+                document.getElementsByClassName("next-page-num")[0].innerHTML = nextPostNum[0].innerHTML;
+                parentElement.removeChild(postsDiv)
+            }
+        </script>
+        <script src='https://embedsocial.com/cdn/iframeContent.min.js'></script>
+        <div data-iframe-height='50'></div>
+</body>
+
+</html>
